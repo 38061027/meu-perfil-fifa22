@@ -2,38 +2,67 @@
 <main class="container">
 
 
-<div class="content-img-info">
+
+<div class="content-img-info" *ngFor="let i of infos">
 
     <div class="img">
-      <p>foto</p>
+
+        <img [src]="i.foto" alt="" class="foto">
+
       <div class="valor">
-        87.0000
+      Valor: {{i.valor}} &#8364;
       </div>
+
     </div>
 
-    <div class="info-content">
-      <div class="info">
-        <p>Nome: José Augusto</p>
-        <p>Idade: 26</p>
-        <p>Nacionalida: Brasil</p>
+    <div class="info-content" >
+      <div class="info" >
+        <p>Nome: {{i.nome}}</p>
+        <p>Idade: {{i.idade}}</p>
+        <p class="nasc-info">Nacionalida: <img [src]="i.nacionalidade" alt="" class="nasc"></p>
       </div>
       <div class="info">
-        <p>Time atual: Chelsea</p>
-        <p>Posição: ATA</p>
-        <p>Altura: 1.75cm</p>
+        <p class="time-info">Time atual: <img [src]="i.time" alt="" class="time"></p>
+        <p>Posição: {{i.posicao}}</p>
+        <p>Altura: {{i.altura}}</p>
       </div>
     </div>
 
 </div>
 
-  <div class="titulos-content">
-    <div class="titulos">CPL</div>
-    <div class="titulos">PL</div>
-    <div class="titulos">CP</div>
-    <div class="titulos">EF</div>
-    <div class="titulos">SCU</div>
-    <div class="titulos">WC</div>
+
+  <div class="titulos-content" *ngFor="let img of titulosImg">
+
+    <div class="titulos"><img [src]="img.ucl" class="titulos-img">
+      <p class="num-titulos">6</p>
+    </div>
+
+    <div class="titulos">
+      <img [src]="img.pl" class="titulos-img">
+      <p class="num-titulos">6</p>
+    </div>
+
+    <div class="titulos">
+      <img [src]="img.scu" class="titulos-img">
+      <p class="num-titulos">3</p>
+    </div>
+
+    <div class="titulos">
+      <img [src]="img.fac" class="titulos-img">
+      <p class="num-titulos">5</p>
+    </div>
+
+    <div class="titulos">
+      <img [src]="img.wc" class="titulos-img">
+      <p class="num-titulos">1</p>
+    </div>
+    <div class="titulos">
+      <img [src]="img.ca" class="titulos-img">
+      <p class="num-titulos">2</p>
+    </div>
   </div>
+
+
 
 
   </main>

@@ -1,0 +1,23 @@
+
+{
+  "info": [
+    { "nome": "José Augusto",
+    "foto": "https://www.pngmart.com/files/22/Pele-PNG-HD.png",
+     "idade": "26",
+      "posicao": "ATA",
+      "time": "https://cdn.icon-icons.com/icons2/103/PNG/256/chelsea_17987.png",
+      "nacionalidade": "https://bandeira.net/wp-content/uploads/2018/08/bandeira-do-brasil-0.png",
+      "altura": "1.75 cm",
+      "valor": "87.00000"
+    }
+  ],
+  "titulos": [
+    { "ucl": "https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fpng&blobkey=id&blobtable=MungoBlobs&blobwhere=1203411044651&ssbinary=true",
+    "pl": "https://footballpredictions.net/storage/136/-4.png",
+    "fac": "https://footballpredictions.net/storage/76/1301426.png",
+      "scu": "https://tmssl.akamaized.net/images/erfolge/verybigquad/354.png?lm=1520606999",
+      "wc": "https://gifs.eco.br/wp-content/uploads/2023/05/imagens-de-taca-copa-do-mundo-png-4.png",
+      "ca": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/League_Cup_Trophy.png/480px-League_Cup_Trophy.png"
+    }
+  ]
+}

@@ -1,18 +1,18 @@
 
 
 .container{
+  background-color: rgb(231, 224, 220);
   display: flex;
-  border: solid red 1px;
   width: 60%;
   height: 400px;
   flex-direction: column;
   position: relative;
+
 }
 
 .content-img-info{
   display: flex;
-  border: solid 1px black;
-  height: 65%;
+  height: 75%;
   justify-content: space-around;
   flex-direction: row;
 
@@ -21,7 +21,7 @@
 .img{
   display: flex;
   position: relative;
-  border: solid red 1px;
+  border: solid black 1px;
   width: 150px;
   height: 170px;
   align-self: center;
@@ -38,7 +38,7 @@
 .img > .valor{
   position: absolute;
   bottom: 0;
-  background-color: gray;
+  background-color: rgb(109, 169, 224);
   width: 100%;
   height: 2rem;
   display: flex;
@@ -47,7 +47,7 @@
 }
 
 .info-content{
-  border: solid red 1px;
+
   display: flex;
   flex-direction: row;
   width: 50%;
@@ -57,7 +57,7 @@
 }
 
 .info-content .info{
-  border: solid red 1px;
+
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -66,21 +66,62 @@
   padding: 0.5rem;
 }
 
+.info-content .info .nasc-info{
+  display: flex;
+}
+
+.info-content .info .nasc-info .nasc{
+
+  width: 1rem;
+}
+
+.info-content .info .time-info{
+  display: flex;
+  align-items: center;
+
+}
+
+.info-content .info .time{
+  width: 1rem;
+}
+
+
 .titulos-content{
-  border: solid red 1px;
+
   position: absolute;
   bottom: 0;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 35%;
+  height: 25%;
 
 }
 
 .titulos-content .titulos{
-  border: solid red 1px;
+  border: solid gray 1px;
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100px;
+}
+
+.titulos-content .titulos .num-titulos{
+  background-color: rgb(109, 169, 224);
+  border-radius: 50%;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+}
+
+
+
+
+.titulos-content .titulos .titulos-img{
+  width: 40%;
+  height: 80%;
 }

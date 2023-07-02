@@ -10,7 +10,7 @@ import { FifaService } from 'src/app/services/fifa.service';
 export class PerfilComponent implements OnInit{
 
   infos: FifaInter[] = []
-  titulosImg: any[] = []
+  titulos: any[] = []
 
 constructor(private fifaService: FifaService){}
 
@@ -20,7 +20,7 @@ getInfo(){
 
 getTitulos(){
   return this.fifaService.getTitulos().subscribe(res => {
-    this.titulosImg = res
+    this.titulos = res
   })
 }
 

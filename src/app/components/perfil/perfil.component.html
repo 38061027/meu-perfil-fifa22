@@ -19,7 +19,7 @@
       <div class="info" >
         <p>Nome: {{i.nome}}</p>
         <p>Idade: {{i.idade}}</p>
-        <p class="nasc-info">Nacionalida: <img [src]="i.nacionalidade" alt="" class="nasc"></p>
+        <p class="nasc-info">Nacionalidade: <img [src]="i.nacionalidade" alt="" class="nasc"></p>
       </div>
       <div class="info">
         <p class="time-info">Time atual: <img [src]="i.time" alt="" class="time"></p>
@@ -31,38 +31,14 @@
 </div>
 
 
-  <div class="titulos-content" *ngFor="let img of titulosImg">
+  <div class="titulos-content" >
 
-    <div class="titulos"><img [src]="img.ucl" class="titulos-img">
-      <p class="num-titulos">6</p>
-    </div>
-
-    <div class="titulos">
-      <img [src]="img.pl" class="titulos-img">
-      <p class="num-titulos">6</p>
-    </div>
-
-    <div class="titulos">
-      <img [src]="img.scu" class="titulos-img">
-      <p class="num-titulos">3</p>
-    </div>
-
-    <div class="titulos">
-      <img [src]="img.fac" class="titulos-img">
-      <p class="num-titulos">5</p>
-    </div>
-
-    <div class="titulos">
-      <img [src]="img.wc" class="titulos-img">
-      <p class="num-titulos">1</p>
-    </div>
-    <div class="titulos">
-      <img [src]="img.ca" class="titulos-img">
-      <p class="num-titulos">2</p>
+    <div class="titulos" *ngFor="let t of titulos">
+      <img [src]="t.img" class="titulos-img" [title]="t.name">
+      <p class="num-titulos">{{t.quantidade}}</p>
     </div>
   </div>
 
 
-
-
   </main>
+

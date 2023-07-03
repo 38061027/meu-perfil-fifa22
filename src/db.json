@@ -14,34 +14,34 @@
   "titulos": [
     { "name": "Champions League",
     "img" : "https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fpng&blobkey=id&blobtable=MungoBlobs&blobwhere=1203411044651&ssbinary=true",
-    "quantidade": "6"
+    "quantidade": 6
     },
     {"name": "Premier League",
     "img": "https://footballpredictions.net/storage/136/-4.png",
-    "quantidade": "6"},
+    "quantidade": 7},
     {"name": "FA Cup",
     "img": "https://footballpredictions.net/storage/76/1301426.png",
-    "quantidade": "5"
+    "quantidade": 6
     },
      { "name": "Super Copa da UFA",
       "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/354.png?lm=1520606999",
-      "quantidade": "3"
+      "quantidade": 3
     },
       {"name": "Copa do Mundo",
       "img": "https://gifs.eco.br/wp-content/uploads/2023/05/imagens-de-taca-copa-do-mundo-png-4.png",
-      "quantidade": "1"
+      "quantidade": 1
     },
      { "name": "Carabao Cup",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/League_Cup_Trophy.png/480px-League_Cup_Trophy.png",
-      "quantidade": "2"
+      "quantidade": 2
     },
      { "name": "Taça da Espanha",
       "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/94.png?lm=1520606999",
-      "quantidade": "2"
+      "quantidade": 2
     },
      { "name": "La Liga",
       "img": "https://upload.wikimedia.org/wikipedia/commons/4/45/LaLiga.png",
-      "quantidade": "2"
+      "quantidade": 2
     }
 
   ]

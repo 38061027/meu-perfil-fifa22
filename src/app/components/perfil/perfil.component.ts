@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FifaInter } from 'src/app/models/info-interface/info.model';
+import { Informacao, Titulos } from 'src/app/models/info-interface/info.model';
 import { FifaService } from 'src/app/services/fifa.service';
 
 @Component({
@@ -9,8 +9,8 @@ import { FifaService } from 'src/app/services/fifa.service';
 })
 export class PerfilComponent implements OnInit{
 
-  infos: FifaInter[] = []
-  titulos: any[] = []
+  infos: Informacao[] = []
+  titulos: Titulos[] = []
 
 constructor(private fifaService: FifaService){}
 

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FifaInter } from '../models/info-interface/info.model';
+import { Informacao, Titulos } from '../models/info-interface/info.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,12 +12,12 @@ export class FifaService {
   baseUrlTitulos : string = 'http://localhost:3000/titulos'
   constructor(private http: HttpClient) { }
 
-  getInfo():Observable<FifaInter[]>{
-    return this.http.get<FifaInter[]>(this.baseUrlInfo)
+  getInfo():Observable<Informacao[]>{
+    return this.http.get<Informacao[]>(this.baseUrlInfo)
   }
 
-  getTitulos():Observable<any[]>{
-    return this.http.get<any[]>(this.baseUrlTitulos)
+  getTitulos():Observable<Titulos[]>{
+    return this.http.get<Titulos[]>(this.baseUrlTitulos)
   }
 
 }

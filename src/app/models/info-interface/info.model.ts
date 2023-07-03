@@ -1,4 +1,4 @@
-export interface FifaInter{
+export interface Informacao{
 
       nome:string,
      idade: number,
@@ -7,6 +7,15 @@ export interface FifaInter{
       nacionalidade: string,
       altura:number,
       valor: number,
-        foto: string
+      foto: string
+
+}
+
+
+export interface Titulos{
+
+  img:string,
+  name: string,
+  quantidade: number
 
 }

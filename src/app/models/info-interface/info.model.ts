@@ -16,6 +16,7 @@ export interface Titulos{
 
   img:string,
   name: string,
-  quantidade: number
+  quantidade: number,
+  temporadas: string[]
 
 }

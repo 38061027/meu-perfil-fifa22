@@ -14,35 +14,45 @@
   "titulos": [
     { "name": "Champions League",
     "img" : "https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fpng&blobkey=id&blobtable=MungoBlobs&blobwhere=1203411044651&ssbinary=true",
-    "quantidade": 6
+    "quantidade": 6,
+    "temporadas":  ["22/23 - Man City", "24/25 - Man Utd ","25/26 - Man Utd","26/27 - FC Barcelona","27/28 - Man Utd","28/29 - Real Madrid"]
     },
     {"name": "Premier League",
     "img": "https://footballpredictions.net/storage/136/-4.png",
-    "quantidade": 7},
+    "quantidade": 7,
+    "temporadas": ["2021 - Everton","2022 - Man City","2023 - Man City","2024 - Man Utd","2025 - Man Utd","2027 - Man Utd","2029 - Chelsea"]},
     {"name": "FA Cup",
     "img": "https://footballpredictions.net/storage/76/1301426.png",
-    "quantidade": 6
+    "quantidade": 5,
+    "temporadas": ["2022 - Man City","2023 - Man City", "2024 - Man Utd", "2025 - Man Utd","2029 - Chelsea"]
     },
      { "name": "Super Copa da UFA",
       "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/354.png?lm=1520606999",
-      "quantidade": 3
+      "quantidade": 3,
+      "temporadas": ["2023 - Man City", "2025 - Man Utd","2026 - Man Utd"]
     },
       {"name": "Copa do Mundo",
       "img": "https://gifs.eco.br/wp-content/uploads/2023/05/imagens-de-taca-copa-do-mundo-png-4.png",
-      "quantidade": 1
+      "quantidade": 1,
+      "temporadas": ["2022 - Brasil"]
     },
      { "name": "Carabao Cup",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/League_Cup_Trophy.png/480px-League_Cup_Trophy.png",
-      "quantidade": 2
+      "quantidade": 2,
+      "temporadas": ["2024 - Man Utd", "2027 - Man Utd", "2029 - Chelsea"]
     },
      { "name": "Taça da Espanha",
       "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/94.png?lm=1520606999",
-      "quantidade": 2
+      "quantidade": 2,
+      "temporadas": ["2026 - FC Barcelona","2028 - Real Madrid"]
     },
      { "name": "La Liga",
       "img": "https://upload.wikimedia.org/wikipedia/commons/4/45/LaLiga.png",
-      "quantidade": 2
+      "quantidade": 2,
+      "temporadas": ["2026 - FC Barcelona","2028 - Real Madrid"]
     }
 
   ]
+  
+  
 }

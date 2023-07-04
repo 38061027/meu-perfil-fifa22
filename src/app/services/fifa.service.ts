@@ -10,6 +10,8 @@ export class FifaService {
 
   baseUrlInfo: string = 'http://localhost:3000/info'
   baseUrlTitulos : string = 'http://localhost:3000/titulos'
+
+
   constructor(private http: HttpClient) { }
 
   getInfo():Observable<Informacao[]>{
@@ -19,5 +21,7 @@ export class FifaService {
   getTitulos():Observable<Titulos[]>{
     return this.http.get<Titulos[]>(this.baseUrlTitulos)
   }
+
+ 
 
 }

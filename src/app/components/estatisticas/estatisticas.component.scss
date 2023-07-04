@@ -1,0 +1,13 @@
+
+.nav-container{
+  background-color: rgb(69, 155, 226);
+}
+
+.nav-container .nav-bar .nav-list{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.nav-container .nav-bar .nav-list li{
+  border: 2px solid gray;
+}

@@ -22,6 +22,5 @@ export class FifaService {
     return this.http.get<Titulos[]>(this.baseUrlTitulos)
   }
 
- 
 
 }

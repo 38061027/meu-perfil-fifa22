@@ -1,0 +1,32 @@
+
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  border: solid black;
+}
+
+.hearder{
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+.card-container .card .temporada-content{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-container .card .temporada-content li{
+  padding: 5px;
+  list-style: none;
+}
+.card-container .card .temporada-content .temp-liga{
+  color: blue;
+  font-weight: bolder;
+}

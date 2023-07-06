@@ -22,12 +22,12 @@ constructor(private fifaService: FifaService,
     .pipe(filter((event) => event instanceof NavigationEnd))
     .subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
-        this.isArtilhariasRoute = event.url === '/artilharias';
+        this.isArtilhariasRoute = event.url === '/artilharias' || event.url === '/clubes';
       }
     });
-   
+
   }
-  
+
 
 getInfo(){
   return this.fifaService.getInfo().subscribe(res => this.infos = res)

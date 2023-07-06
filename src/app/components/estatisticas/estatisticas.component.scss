@@ -1,13 +1,29 @@
 
 .nav-container{
   background-color: rgb(69, 155, 226);
+  width: 60%;
+  height: 2rem;
+
+}
+.nav-container .nav-bar{
+ height: 100%;
+
 }
 
 .nav-container .nav-bar .nav-list{
   display: flex;
-  gap: 1rem;
   list-style: none;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+
 }
-.nav-container .nav-bar .nav-list li{
-  border: 2px solid gray;
+
+.nav-container .nav-bar .nav-list li a{
+  text-decoration: none;
+  color: #eee;
+  font-weight: bold;
+
+
 }
+

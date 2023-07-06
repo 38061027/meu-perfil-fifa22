@@ -1,0 +1,145 @@
+{
+  "info": [
+    {
+      "nome": "José Augusto",
+      "foto": "https://www.pngmart.com/files/22/Pele-PNG-HD.png",
+      "idade": "26",
+      "posicao": "ATA",
+      "time": "https://cdn.icon-icons.com/icons2/103/PNG/256/chelsea_17987.png",
+      "nacionalidade": "https://bandeira.net/wp-content/uploads/2018/08/bandeira-do-brasil-0.png",
+      "altura": "1.75 cm",
+      "valor": "87.00000"
+    }
+  ],
+  "titulos": [
+    {
+      "name": "Champions League",
+      "img": "https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fpng&blobkey=id&blobtable=MungoBlobs&blobwhere=1203411044651&ssbinary=true",
+      "quantidade": 6,
+      "temporadas": [
+        "22/23 - Man City",
+        "24/25 - Man Utd ",
+        "25/26 - Man Utd",
+        "26/27 - FC Barcelona",
+        "27/28 - Man Utd",
+        "28/29 - Real Madrid"
+      ],
+      "artilharias": [
+        "22/23 - 15 Goals",
+        "24/25 - 10 Goals",
+        "25/26 - 18 Goals",
+        "26/27 - 16 Goals",
+        "27/28 - 19 Goals",
+        "28/29 - 21 Goals"
+      ]
+    },
+    {
+      "name": "Premier League",
+      "img": "https://footballpredictions.net/storage/136/-4.png",
+      "quantidade": 7,
+      "temporadas": [
+        "2021 - Everton",
+        "2022 - Man City",
+        "2023 - Man City",
+        "2024 - Man Utd",
+        "2025 - Man Utd",
+        "2027 - Man Utd",
+        "2029 - Chelsea"
+      ],
+      "artilharias": [
+        "2021 - 25 Goals",
+        "2022 - 30 Goals",
+        "2023 - 32 Goals",
+        "2024 - 28 Goals",
+        "2025 - 32 Goals",
+        "2027 - 41 Goals",
+        "2029 - 44 Goals"
+      ]
+    },
+    {
+      "name": "FA Cup",
+      "img": "https://footballpredictions.net/storage/76/1301426.png",
+      "quantidade": 5,
+      "temporadas": [
+        "2022 - Man City",
+        "2023 - Man City",
+        "2024 - Man Utd",
+        "2025 - Man Utd",
+        "2029 - Chelsea"
+      ],
+      "artilharias": [
+        "2022 - 11 Goals",
+        "2023 - 10 Goals",
+        "2024 - 15 Goals",
+        "2025 - 10 Goals",
+        "2029 - 12 Goals"
+      ]
+    },
+    {
+      "name": "Super Copa da UFA",
+      "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/354.png?lm=1520606999",
+      "quantidade": 3,
+      "temporadas": [
+        "2023 - Man City",
+        "2025 - Man Utd",
+        "2026 - Man Utd"
+      ],
+      "artilharias": [
+        "2023 - 2 Goals",
+        "2025 - 3 Goals",
+        "2026 - 2 Goals"
+      ]
+    },
+    {
+      "name": "Copa do Mundo",
+      "img": "https://gifs.eco.br/wp-content/uploads/2023/05/imagens-de-taca-copa-do-mundo-png-4.png",
+      "quantidade": 1,
+      "temporadas": [
+        "2022 - Brasil"
+      ],
+      "artilharias": [
+        "2022 - 10 Goals"
+      ]
+    },
+    {
+      "name": "Carabao Cup",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/League_Cup_Trophy.png/480px-League_Cup_Trophy.png",
+      "quantidade": 3,
+      "temporadas": [
+        "2024 - Man Utd",
+        "2027 - Man Utd",
+        "2029 - Chelsea"
+      ],
+      "artilharias": [
+        "2024 - 9 Goals",
+        "2027 - 12 Goals",
+        "2029 - 10 Goals"
+      ]
+    },
+    {
+      "name": "Taça da Espanha",
+      "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/94.png?lm=1520606999",
+      "quantidade": 2,
+      "temporadas": [
+        "2026 - FC Barcelona",
+        "2028 - Real Madrid"
+      ],
+      "artilharias": [
+        "2028 - 11 Goals"
+      ]
+    },
+    {
+      "name": "La Liga",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/45/LaLiga.png",
+      "quantidade": 2,
+      "temporadas": [
+        "2026 - FC Barcelona",
+        "2028 - Real Madrid"
+      ],
+      "artilharias": [
+        "2026 - 30 Goals",
+        "2028 - 26 Goals"
+      ]
+    }
+  ]
+}

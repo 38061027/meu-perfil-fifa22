@@ -1,11 +1,11 @@
 <div class="container">
-  
-  
+
+
   <mat-card class="card-container" *ngFor="let p of titulos">
-    <div class="hearder">{{p.quantidade}}X VENCEDOR DA {{p.name.toUpperCase()}}</div>
-  
+    <div class="hearder">{{p.quantidade}}x VENCEDOR DA {{p.name.toUpperCase()}}</div>
+
     <mat-card-content class="card" >
-  
+
       <div class="section-img">
         <img [src]="p.img">
       </div>
@@ -15,9 +15,9 @@
         <ul>
           <li *ngFor="let temporada of p.temporadas">{{temporada}}</li>
         </ul>
-     
+
       </div>
-  
+
     </mat-card-content>
   </mat-card>
 

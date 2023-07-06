@@ -5,15 +5,17 @@
   flex-direction: column;
   width: 300px;
 
-  border: solid black;
+  border: 1px solid rgb(175, 170, 170);
 }
 
 .hearder{
-  background-color: aqua;
+  background-color: blue;
   display: flex;
   justify-content: center;
-  font-weight: bold;
+  font-weight: bold ;
+  color: #eee;
 }
+
 
 
 .card-container .card .temporada-content{
@@ -26,6 +28,7 @@
   padding: 5px;
   list-style: none;
 }
+
 .card-container .card .temporada-content .temp-liga{
   color: blue;
   font-weight: bolder;

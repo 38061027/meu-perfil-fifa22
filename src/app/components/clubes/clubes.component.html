@@ -4,14 +4,54 @@
 
   <mat-card-content class="card" >
 
-    <div class="transfer">
-      <p>gremio => Everton</p>
-    <p>Everton => man city</p>
-    <p>man city => man utd</p>
-    <p>man utd => Barcelona</p>
-    <p>Barcelona => Man utd</p>
-    <p>man utd => Real madrid</p>
-    <p>real madrid=> chelsea</p>
+    <div class="transfer" *ngFor="let c of transferTimes">
+
+<div class="content-teams">
+    <p><img [src]="c.gremio" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.everton" class="img-transfer"></p>
+</div>
+<div class="content-teams">
+    <p><img [src]="c.everton" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.mancity" class="img-transfer"></p>
+</div>
+<div class="content-teams">
+    <p><img [src]="c.mancity" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.manutd" class="img-transfer"></p>
+
+</div>
+<div class="content-teams">
+    <p><img [src]="c.manutd" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.barcelona" class="img-transfer"></p>
+
+</div>
+<div class="content-teams">
+    <p><img [src]="c.barcelona" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.mancity" class="img-transfer"></p>
+
+</div>
+<div class="content-teams">
+    <p><img [src]="c.mancity" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.manutd" class="img-transfer"></p>
+
+</div>
+<div class="content-teams">
+    <p><img [src]="c.manutd" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.realmadrid" class="img-transfer"></p>
+
+</div>
+<div class="content-teams">
+    <p><img [src]="c.realmadrid" class="img-transfer"></p>
+    <mat-icon>arrow_forward</mat-icon>
+    <p><img [src]="c.chelsea" class="img-transfer"></p>
+
+</div>
 
     </div>
 

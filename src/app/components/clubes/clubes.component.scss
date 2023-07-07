@@ -10,3 +10,17 @@ width: 60%;
   justify-content: center;
   align-items: center;
 }
+.transfer .content-teams{
+  display: flex;
+  flex-direction: row;
+gap: 10px;
+}
+
+.transfer .content-teams mat-icon{
+align-self: center;
+}
+
+.transfer .img-transfer{
+  width: 50px;
+  height: 55px;
+}

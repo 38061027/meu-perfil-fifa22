@@ -8,23 +8,12 @@ import { Informacao, Titulos } from '../models/info-interface/info.model';
 })
 export class FifaService {
 
-  baseUrlInfo: string = 'http://localhost:3000/info'
-  baseUrlTitulos : string = 'http://localhost:3000/titulos'
-  baseUrlTransfer : string = 'http://localhost:3000/transferencia'
-
+  baseUrl: string = 'http://localhost:3000/results'
 
   constructor(private http: HttpClient) { }
 
-  getInfo():Observable<Informacao[]>{
-    return this.http.get<Informacao[]>(this.baseUrlInfo)
-  }
-
-  getTitulos():Observable<Titulos[]>{
-    return this.http.get<Titulos[]>(this.baseUrlTitulos)
-  }
-
-  getTransfer():Observable<any[]>{
-    return this.http.get<any[]>(this.baseUrlTransfer)
+  getResults():Observable<any>{
+    return this.http.get<any>(this.baseUrl)
   }
 
 

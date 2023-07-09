@@ -3,7 +3,7 @@
 
 
 
-<div class="content-img-info" *ngFor="let i of infos">
+<div class="content-img-info" *ngFor="let i of resultsArray[0].info">
 
     <div class="img">
 
@@ -35,7 +35,7 @@
 
   <div class="titulos-content" >
 
-    <div class="titulos" *ngFor="let t of titulos">
+    <div class="titulos" *ngFor="let t of resultsArray[0].titulos">
       <img [src]="t.img" class="titulos-img" [title]="t.name">
       <p class="num-titulos">{{t.quantidade}}</p>
     </div>
@@ -45,7 +45,8 @@
 </main>
 <app-estatisticas></app-estatisticas>
 
-<app-titulos [titulos]="titulos" *ngIf="!isArtilhariasRoute"></app-titulos>
+<app-titulos [arr]="resultsArray" *ngIf="!isArtilhariasRoute"></app-titulos>
+
 
 
 

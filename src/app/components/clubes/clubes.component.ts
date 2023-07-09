@@ -6,22 +6,11 @@ import { FifaService } from 'src/app/services/fifa.service';
   templateUrl: './clubes.component.html',
   styleUrls: ['./clubes.component.scss']
 })
-export class ClubesComponent implements OnInit{
+export class ClubesComponent {
 
-  transferTimes: any[] = []
+
 
 constructor(private fifaService: FifaService){
 }
-
-  getTransfer(){
-    return this.fifaService.getTransfer().subscribe(
-      res => this.transferTimes = res,
-
-    )
-  }
-
-  ngOnInit(): void {
-    this.getTransfer()
-  }
 
 }

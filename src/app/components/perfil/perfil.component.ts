@@ -11,8 +11,8 @@ import { FifaService } from 'src/app/services/fifa.service';
 })
 export class PerfilComponent implements OnInit{
   isArtilhariasRoute: boolean = false;
-  infos: Informacao[] = []
- @Output() titulos: Titulos[] = []
+ @Output() resultsArray: any[]= [];
+
 
 
 
@@ -29,20 +29,18 @@ constructor(private fifaService: FifaService,
   }
 
 
-getInfo(){
-  return this.fifaService.getInfo().subscribe(res => this.infos = res)
-}
+getResults(){
+  return this.fifaService.getResults().subscribe(res => {
+    this.resultsArray = res
+    console.log(res)
 
-getTitulos(){
-  return this.fifaService.getTitulos().subscribe(res => {
-    this.titulos = res
   })
 }
 
 
+
 ngOnInit(): void {
-  this.getInfo()
-  this.getTitulos()
+  this.getResults()
 
 
 }

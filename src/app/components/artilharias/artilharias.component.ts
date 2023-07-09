@@ -7,9 +7,9 @@ import { FifaService } from 'src/app/services/fifa.service';
   templateUrl: './artilharias.component.html',
   styleUrls: ['./artilharias.component.scss']
 })
-export class ArtilhariasComponent implements OnInit{
+export class ArtilhariasComponent{
 
-  estatisticasList: any[]= []
+
 
 
   constructor (private fifaService: FifaService){}
@@ -17,15 +17,6 @@ export class ArtilhariasComponent implements OnInit{
 
 
 
-  getEstatistica(){
-    return this.fifaService.getTitulos().subscribe( res =>{
-      this.estatisticasList = res
-    }
-    )
-    }
 
-    ngOnInit(): void {
-      this.getEstatistica()
-    }
 
 }

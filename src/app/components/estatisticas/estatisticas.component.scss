@@ -26,4 +26,16 @@
 
 
 }
+.nav-container .nav-bar .nav-list li{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.active{
+
+background: rgb(29, 83, 155);
+color: #eee;
+}
 

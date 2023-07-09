@@ -7,7 +7,7 @@ import { ClubesComponent } from './components/clubes/clubes.component';
 
 
 const routes: Routes = [
-  {path: 'titulos', loadChildren: () => import('./components/titulos/titulos.module').then(m => m.TitulosModule)},
+  {path: 'titulos', component: TitulosComponent},
   {path: 'artilharias', component: ArtilhariasComponent},
   {path: 'clubes', component: ClubesComponent}
 ];

@@ -32,7 +32,6 @@ constructor(private fifaService: FifaService,
 getResults(){
   return this.fifaService.getResults().subscribe(res => {
     this.resultsArray = res
-    console.log(res)
 
   })
 }

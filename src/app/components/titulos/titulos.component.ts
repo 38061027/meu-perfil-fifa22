@@ -9,19 +9,25 @@ import { FifaService } from 'src/app/services/fifa.service';
 })
 export class TitulosComponent implements OnInit{
 
-  @Input() arr: Titulos[]= [];
 
-  titulos: any[]= []
+
+taca: any[]= []
+
 
   constructor (private fifaService: FifaService){}
 
 
-  getTitulos(){
-    return this.arr = this.titulos
-  }
-
   ngOnInit(): void {
     this.getTitulos()
+  }
+
+
+  getTitulos(){
+    return this.fifaService.getResults().subscribe(res => {
+      this.taca = res
+
+
+    })
   }
 
 }

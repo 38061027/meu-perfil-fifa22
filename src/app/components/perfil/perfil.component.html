@@ -33,19 +33,11 @@
 </div>
 
 
-  <div class="titulos-content" >
-
-    <div class="titulos" *ngFor="let t of resultsArray[0].titulos">
-      <img [src]="t.img" class="titulos-img" [title]="t.name">
-      <p class="num-titulos">{{t.quantidade}}</p>
-    </div>
-  </div>
 
 
 </main>
 <app-estatisticas></app-estatisticas>
 
-<app-titulos [arr]="resultsArray" *ngIf="!isArtilhariasRoute"></app-titulos>
 
 
 

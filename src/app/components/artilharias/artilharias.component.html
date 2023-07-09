@@ -1,5 +1,5 @@
 
-<!--
+
 <mat-card class="card-container">
   <div class="hearder">Artilharias</div>
 
@@ -7,11 +7,13 @@
 
 
           <ul class="temporada-content">
-            <li  *ngFor="let i of estatisticasList">
-              <p class="temp-liga">{{i.name}}</p> - {{i.artilharias}}
+            <li  *ngFor="let i of artilharias[0].titulos">
+              <p class="temp-liga">{{i.name}}</p>
+               <p>{{i.artilharias}}</p>
             </li>
           </ul>
 
 
+
   </mat-card-content>
-</mat-card> -->
+</mat-card>

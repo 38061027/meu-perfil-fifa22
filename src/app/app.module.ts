@@ -9,10 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material/material/material.module';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { ArtilhariasComponent } from './components/artilharias/artilharias.component';
-
+import { TitulosComponent } from './components/titulos/titulos.component';
 import { EstatisticasComponent } from './components/estatisticas/estatisticas.component';
-import { TitulosModule } from './components/titulos/titulos.module';
+
 import { ClubesComponent } from './components/clubes/clubes.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { ClubesComponent } from './components/clubes/clubes.component';
     PerfilComponent,
     EstatisticasComponent,
     ClubesComponent,
-
+    TitulosComponent
 
   ],
   imports: [
@@ -30,7 +31,7 @@ import { ClubesComponent } from './components/clubes/clubes.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    TitulosModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

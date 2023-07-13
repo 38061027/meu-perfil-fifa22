@@ -1,4 +1,4 @@
-import { Titulos } from 'src/app/models/info-interface/info.model';
+
 import { Component, Input, OnInit } from '@angular/core';
 import { FifaService } from 'src/app/services/fifa.service';
 
@@ -10,9 +10,7 @@ import { FifaService } from 'src/app/services/fifa.service';
 export class TitulosComponent implements OnInit{
 
 
-
-taca: any[]= []
-
+    taca: any[]= []
 
   constructor (private fifaService: FifaService){}
 

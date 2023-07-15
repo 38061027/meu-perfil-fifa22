@@ -15,7 +15,7 @@ constructor(private fifaService: FifaService){
 
 
 getTransfer(){
-  this.fifaService.getResults().subscribe(res => this.transferTeams = res)
+  this.fifaService.getResults().subscribe(res => this.transferTeams = res.results)
 }
 
 ngOnInit(): void {

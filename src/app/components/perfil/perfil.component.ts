@@ -31,7 +31,7 @@ constructor(private fifaService: FifaService,
 
 getResults(){
   return this.fifaService.getResults().subscribe(res => {
-    this.resultsArray = res
+    this.resultsArray = res.results
 
   })
 }

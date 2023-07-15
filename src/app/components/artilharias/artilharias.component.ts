@@ -18,8 +18,8 @@ export class ArtilhariasComponent implements OnInit{
 
   getArtilharias(){
     return this.fifaService.getResults().subscribe(res => {
-      this.artilharias = res;
-      console.log(res)
+      this.artilharias = res.results;
+
 
     })
   }

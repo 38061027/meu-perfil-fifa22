@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
   // baseUrl: '/api',
-  apiUrl: 'http://localhost:3000/results',
+  apiUrl: 'https://api-fifa-38061027.vercel.app/',
 };

@@ -22,7 +22,7 @@ export class TitulosComponent implements OnInit{
 
   getTitulos(){
     return this.fifaService.getResults().subscribe(res => {
-      this.taca = res
+      this.taca = res.results
 
 
     })

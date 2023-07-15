@@ -163,15 +163,13 @@
           "artilharias": ["2023 - 2 Goals", "2025 - 3 Goals", "2026 - 2 Goals", "2031 - 1 Goals" ]
         },
         {
-          "name": "Copa Do Mundo",
-          "imgliga": "https://upload.wikimedia.org/wikipedia/pt/thumb/e/e3/2022_FIFA_World_Cup.svg/1200px-2022_FIFA_World_Cup.svg.png",
-          "img": "https://gifs.eco.br/wp-content/uploads/2023/05/imagens-de-taca-copa-do-mundo-png-4.png",
-          "quantidade": 1,
-          "temporadas": [{
-            "team": "https://bandeira.net/wp-content/uploads/2018/08/bandeira-do-brasil-0.png",
-            "temporada": "2022"
-          }],
-          "artilharias": ["2022 - 10 Goals"]
+          "name": "Bola de Ouro",
+          "img": "https://cdn.shopify.com/s/files/1/0580/5673/6946/products/S8440942a15ee4614a7c8e73b2aa7019dt_1000x1000.png",
+          "quantidade": "1",
+          "temporadas":[{
+            "team":"https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
+            "temporada": "2031"
+          }]
         },
         {
           "name": "Carabao Cup",

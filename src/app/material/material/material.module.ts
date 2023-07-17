@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 const MODULES = [
   MatCardModule,
-  MatIconModule
+  MatIconModule,
+  MatBadgeModule
 ]
 
 @NgModule({

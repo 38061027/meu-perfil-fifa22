@@ -17,8 +17,11 @@
 
 .hearder{
   display: flex;
-  background-color: blue;
+  background-color: #1d539b;
   color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
 
 .card-container .card{
@@ -26,7 +29,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+
   align-items: center;
   justify-content: center;
 }

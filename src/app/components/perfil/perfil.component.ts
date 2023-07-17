@@ -11,6 +11,8 @@ import { FifaService } from 'src/app/services/fifa.service';
 })
 export class PerfilComponent implements OnInit{
   isArtilhariasRoute: boolean = false;
+
+  img: string = 'src/assets/img/foto-perfil.png'
  @Output() resultsArray: any[]= [];
 
 

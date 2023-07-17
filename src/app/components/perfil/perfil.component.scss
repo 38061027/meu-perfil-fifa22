@@ -21,10 +21,12 @@
 .img{
   display: flex;
   position: relative;
-  border: solid black 1px;
-  width: 150px;
+  width: 160px;
   height: 170px;
   align-self: center;
+}
+.img .foto{
+max-width: 100%;
 }
 
 .img > p {
@@ -34,6 +36,8 @@
  width: 100%;
  height: 100%;
 }
+
+
 
 .img > .valor{
   position: absolute;
@@ -107,17 +111,13 @@
 }
 
 .titulos-content .titulos .num-titulos{
-  background-color: rgb(109, 169, 224);
-  border-radius: 50%;
-  width: 1rem;
+
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  margin-bottom: 5px;
   font-weight: 400;
-
+margin-left: 0.5rem;
 }
-
 
 
 

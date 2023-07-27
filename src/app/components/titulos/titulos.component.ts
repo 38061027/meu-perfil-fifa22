@@ -10,6 +10,7 @@ import { FifaService } from 'src/app/services/fifa.service';
 export class TitulosComponent implements OnInit{
 
 
+  panelOpenState = false;
     taca: any[]= []
 
   constructor (private fifaService: FifaService){}
@@ -24,8 +25,9 @@ export class TitulosComponent implements OnInit{
     return this.fifaService.getResults().subscribe(res => {
       this.taca = res.results
 
-
     })
   }
+
+
 
 }

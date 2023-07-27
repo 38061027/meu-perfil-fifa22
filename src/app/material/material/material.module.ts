@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
-
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const MODULES = [
   MatCardModule,
   MatIconModule,
-  MatBadgeModule
+  MatBadgeModule,
+  MatExpansionModule
 ]
 
 @NgModule({

@@ -1,55 +1,69 @@
+<body>
 
 
 
-<main class="container">
+  <main class="container">
 
 
 
-<div class="content-img-info" *ngFor="let i of resultsArray[0].info">
+  <div class="content-img-info" *ngFor="let i of resultsArray[0].info">
 
-    <div class="img">
+      <div class="img">
 
-        <img src="https://scontent.fgru5-1.fna.fbcdn.net/v/t39.30808-6/361090069_955875315529383_2164280012606034172_n.jpg?_nc_cat=110&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=lWtSTOBlEZMAX-RtBvS&_nc_ht=scontent.fgru5-1.fna&oh=00_AfBWPc1Ayttso8Y0iMnf2Bs4SolC3_aI0AnSpwAimp5I4w&oe=64BB76EF"  alt="" class="foto">
+          <img src="https://scontent.fgru5-1.fna.fbcdn.net/v/t39.30808-6/361090069_955875315529383_2164280012606034172_n.jpg?_nc_cat=110&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=lWtSTOBlEZMAX-RtBvS&_nc_ht=scontent.fgru5-1.fna&oh=00_AfBWPc1Ayttso8Y0iMnf2Bs4SolC3_aI0AnSpwAimp5I4w&oe=64BB76EF"  alt="" class="foto">
 
-      <div class="valor">
-      Valor: {{i.valor}} &#8364;
+        <div class="valor">
+        Valor: {{i.valor}} &#8364;
+        </div>
+
       </div>
 
-    </div>
+      <div class="info-content" >
+        <div class="info" >
+          <p>Nome: {{i.nome}}</p>
+          <p>Idade: {{i.idade}}</p>
+          <p class="nasc-info">Nacionalidade: <img [src]="i.nacionalidade" alt="" class="nasc"></p>
+        </div>
+        <div class="info">
+          <p class="time-info">Time atual: <img [src]="i.time" alt="" class="time"></p>
+          <p>Posição: {{i.posicao}}</p>
+          <p>Altura: {{i.altura}}</p>
+        </div>
 
-    <div class="info-content" >
-      <div class="info" >
-        <p>Nome: {{i.nome}}</p>
-        <p>Idade: {{i.idade}}</p>
-        <p class="nasc-info">Nacionalidade: <img [src]="i.nacionalidade" alt="" class="nasc"></p>
       </div>
-      <div class="info">
-        <p class="time-info">Time atual: <img [src]="i.time" alt="" class="time"></p>
-        <p>Posição: {{i.posicao}}</p>
-        <p>Altura: {{i.altura}}</p>
-      </div>
-
-    </div>
 
 
-</div>
-
-
-<div class="titulos-content" >
-
-
-  <div class="titulos" *ngFor="let t of resultsArray[0].titulos">
-    <img [src]="t.img" class="titulos-img" [title]="t.name">
-    <p class="num-titulos" [matBadge]="t.quantidade" ></p>
   </div>
-</div>
+
+
+
+
+
+
+          <div class="titulos-content" >
+
+
+            <div class="titulos" *ngFor="let t of resultsArray[0].titulos">
+              <img [src]="t.img" class="titulos-img" [title]="t.name">
+              <p class="num-titulos" [matBadge]="t.quantidade" ></p>
+            </div>
+
+          </div>
+
+
+          <div class="estatistica">
+
+              <app-estatisticas></app-estatisticas>
+
+          </div>
 
 
 
 </main>
-<app-estatisticas></app-estatisticas>
 
 
 
 
+
+</body>
 

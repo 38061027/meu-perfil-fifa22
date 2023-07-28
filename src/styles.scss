@@ -4,5 +4,15 @@
   box-sizing: border-box;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body { margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin-bottom: 0.5rem;
+
+  }
+
+  html{
+    background: rgb(184,187,198);
+    background: linear-gradient(333deg, rgba(184,187,198,1) 0%, rgba(152,97,215,1) 100%);
+  }
+

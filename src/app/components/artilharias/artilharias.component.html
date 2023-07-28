@@ -1,19 +1,21 @@
+<body>
 
 
-<mat-card class="card-container">
-  <div class="hearder">Artilharias</div>
+  <mat-card class="card-container">
+    <div class="hearder">Artilharias</div>
 
-  <mat-card-content class="card" >
-
-
-          <ul class="temporada-content">
-            <li  *ngFor="let i of artilharias[0].titulos">
-              <p class="temp-liga"><img [src]="i.imgliga" ></p>
-               <p>{{i.artilharias}}</p>
-            </li>
-          </ul>
+    <mat-card-content class="card" >
 
 
+            <ul class="temporada-content">
+              <li  *ngFor="let i of artilharias[0].titulos">
+                <p class="temp-liga"><img [src]="i.imgliga" ></p>
+                 <p>{{i.artilharias}}</p>
+              </li>
+            </ul>
 
-  </mat-card-content>
-</mat-card>
+
+
+    </mat-card-content>
+  </mat-card>
+</body>

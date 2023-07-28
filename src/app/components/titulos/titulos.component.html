@@ -1,37 +1,42 @@
-<div class="container">
-  <mat-card class="card-container" *ngFor="let p of taca[0].titulos">
-    <div class="hearder">
-      {{ p.temporadas.length }}x VENCEDOR DA {{ p.name.toUpperCase() }}
-    </div>
+<body>
 
-    <mat-card-content class="card">
-      <div class="section-img">
-        <img [src]="p.img" [title]="p.name" />
+
+
+  <div class="container">
+    <mat-card class="card-container" *ngFor="let p of taca[0].titulos">
+      <div class="hearder">
+        {{ p.temporadas.length }}x VENCEDOR DA {{ p.name.toUpperCase() }}
       </div>
 
-      <div class="section-season">
-        <ul>
-          <li *ngFor="let i of p.temporadas" class="temporadas">
-            <img [src]="i.team" /> - {{ i.temporada }}
-          </li>
-        </ul>
-      </div>
-    </mat-card-content>
+      <mat-card-content class="card">
+        <div class="section-img">
+          <img [src]="p.img" [title]="p.name" />
+        </div>
+
+        <div class="section-season">
+          <ul>
+            <li *ngFor="let i of p.temporadas" class="temporadas">
+              <img [src]="i.team" /> - {{ i.temporada }}
+            </li>
+          </ul>
+        </div>
+      </mat-card-content>
 
 
-    <mat-expansion-panel
-      (opened)="panelOpenState = true"
-      (closed)="panelOpenState = false"
-    >
-      <mat-expansion-panel-header>
-        <mat-panel-description>
-          <strong>Prêmios Do Campeonato</strong>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <div class="premios-content" *ngFor="let premio of p.premios">
-        <p>{{ premio.name }}</p>
-        <p>{{premio.temporada.length}}x</p>
-      </div>
-    </mat-expansion-panel>
-  </mat-card>
-</div>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-description>
+            <strong>Prêmios Do Campeonato</strong>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="premios-content" *ngFor="let premio of p.premios">
+          <p>{{ premio.name }}</p>
+          <p>{{premio.temporada.length}}x</p>
+        </div>
+      </mat-expansion-panel>
+    </mat-card>
+  </div>
+</body>

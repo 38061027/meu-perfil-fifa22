@@ -45,7 +45,7 @@
 
             <div class="titulos" *ngFor="let t of resultsArray[0].titulos">
               <img [src]="t.img" class="titulos-img" [title]="t.name">
-              <p class="num-titulos" [matBadge]="t.quantidade" ></p>
+              <p class="num-titulos" [matBadge]="t.temporadas.length"></p>
             </div>
 
           </div>

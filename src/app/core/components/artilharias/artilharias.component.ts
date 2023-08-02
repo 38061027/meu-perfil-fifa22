@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { FifaService } from 'src/app/services/fifa.service';
+import { FifaService } from '../../services/fifa.service';
 
 @Component({
   selector: 'app-artilharias',

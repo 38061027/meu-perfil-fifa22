@@ -1,28 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MaterialModule } from './material/material/material.module';
-import { PerfilComponent } from './components/perfil/perfil.component';
-import { ArtilhariasComponent } from './components/artilharias/artilharias.component';
-import { TitulosComponent } from './components/titulos/titulos.component';
-import { EstatisticasComponent } from './components/estatisticas/estatisticas.component';
+import { RouterModule } from '@angular/router';
+import { CoreModule } from './core/core.module';
 
-import { ClubesComponent } from './components/clubes/clubes.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArtilhariasComponent,
-    PerfilComponent,
-    EstatisticasComponent,
-    ClubesComponent,
-    TitulosComponent
 
   ],
   imports: [
@@ -30,8 +21,8 @@ import { ClubesComponent } from './components/clubes/clubes.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule,
-
+    RouterModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,12 +5,12 @@
         {
           "nome": "José Augusto",
           "foto": "https://www.pngmart.com/files/22/Pele-PNG-HD.png",
-          "idade": "27",
+          "idade": "29",
           "posicao": "ATA",
           "time": "https://cdn.icon-icons.com/icons2/103/PNG/256/chelsea_17987.png",
           "nacionalidade": "https://bandeira.net/wp-content/uploads/2018/08/bandeira-do-brasil-0.png",
           "altura": "1.75 cm",
-          "valor": "87.00000"
+          "valor": "112.000.000"
         }
       ],
 
@@ -19,7 +19,7 @@
           "name": "Champions League",
           "imgliga": "https://upload.wikimedia.org/wikipedia/pt/9/9b/116px-UEFA_Champions_League_logo_2_svg.png",
           "img": "https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fpng&blobkey=id&blobtable=MungoBlobs&blobwhere=1203411044651&ssbinary=true",
-          "quantidade": 7,
+
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/0/02/Manchester_City_Football_Club.png",
@@ -48,6 +48,10 @@
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
               "temporada": "29/30"
+            },
+            {
+              "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
+              "temporada": "32/33"
             }
           ],
           "artilharias": [
@@ -57,42 +61,54 @@
             "26/27 - 16 Goals",
             "27/28 - 19 Goals",
             "28/29 - 21 Goals",
-            "29/30 - 20 Goals"
-          ]
+            "29/30 - 20 Goals",
+            "32/33 - 13 Goals"
+          ],
+          "premios":[{
+            "name": "Melhor jogador da Champions League",
+            "temporada": ["30/31","32/33"]
+          }]
         },
         {
           "name": "Premier League",
           "imgliga": "https://upload.wikimedia.org/wikipedia/bs/6/64/Premier_League_%28grb%29.png",
           "img": "https://footballpredictions.net/storage/136/-4.png",
-          "quantidade": 7,
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/a/ae/Everton_FC_logo_2014.png",
-              "temporada": "2021"
+              "temporada": "21/22"
             },
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/0/02/Manchester_City_Football_Club.png",
-              "temporada": "2022"
+              "temporada": "22/23"
             },
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/0/02/Manchester_City_Football_Club.png",
-              "temporada": "2023"
+              "temporada": "23/24"
             },
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/b/b6/Manchester_United_FC_logo.png",
-              "temporada": "2024"
+              "temporada": "24/25"
             },
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/b/b6/Manchester_United_FC_logo.png",
-              "temporada": "2025"
+              "temporada": "25/26"
             },
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/b/b6/Manchester_United_FC_logo.png",
-              "temporada": "2027"
+              "temporada": "26/27"
             },
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
-              "temporada": "2029"
+              "temporada": "29/30"
+            },
+            {
+              "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
+              "temporada": "30/31"
+            },
+            {
+              "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
+              "temporada": "32/33"
             }
           ],
           "artilharias": [
@@ -102,14 +118,19 @@
             "2024 - 28 Goals",
             "2025 - 32 Goals",
             "2027 - 41 Goals",
-            "2029 - 52 Goals"
-          ]
+            "2029 - 52 Goals",
+            "2031 - 39 Goals",
+            "2032 - 26 Goals"
+          ],
+          "premios":[{
+            "name": "Chuteira de Ouro",
+            "temporada": [ "22/23", "23/24", "24/25", "25/26" , "26/27", "29/30", "30/31","32/33"]
+          }]
         },
         {
           "name": "FA Cup",
           "imgliga": "https://upload.wikimedia.org/wikipedia/en/5/55/FA_Cup_2020.png",
           "img": "https://footballpredictions.net/storage/76/1301426.png",
-          "quantidade": 5,
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/0/02/Manchester_City_Football_Club.png",
@@ -130,6 +151,10 @@
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
               "temporada": "2029"
+            },
+            {
+              "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
+              "temporada": "2032"
             }
           ],
           "artilharias": [
@@ -137,14 +162,20 @@
             "2023 - 10 Goals",
             "2024 - 15 Goals",
             "2025 - 10 Goals",
-            "2029 - 10 Goals"
-          ]
+            "2029 - 10 Goals",
+            "2031 - 5 Goals",
+            "2032 - 5 Goals"
+          ],
+          "premios":[{
+            "name": "Melhor jogador da Emirates FA Cup",
+            "temporada": [ "2022", "2023", "2024", "2025", "2029" ,"2031","2032"]
+          }]
         },
         {
           "name": "UEFA Super Cup",
           "imgliga": "https://upload.wikimedia.org/wikipedia/pt/8/8a/UEFA_Super_Cup.png",
           "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/354.png?lm=1520606999",
-          "quantidade": 4,
+
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/0/02/Manchester_City_Football_Club.png",
@@ -168,12 +199,15 @@
             "2025 - 3 Goals",
             "2026 - 2 Goals",
             "2031 - 1 Goals"
-          ]
+          ],
+              "premios":[{
+            "name": "Melhor jogador da UEFA SCP",
+            "temporada": ["23","25","26","31"]
+          }]
         },
         {
           "name": "Bola de Ouro",
           "img": "https://cdn.shopify.com/s/files/1/0580/5673/6946/products/S8440942a15ee4614a7c8e73b2aa7019dt_1000x1000.png",
-          "quantidade": 1,
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cc/Chelsea_FC.svg/800px-Chelsea_FC.svg.png",
@@ -185,7 +219,7 @@
           "name": "Carabao Cup",
           "imgliga": "https://upload.wikimedia.org/wikipedia/pt/3/3c/Carabao_Cup_Logo.png",
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/League_Cup_Trophy.png/480px-League_Cup_Trophy.png",
-          "quantidade": 3,
+
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/b/b6/Manchester_United_FC_logo.png",
@@ -204,13 +238,16 @@
             "2024 - 9 Goals",
             "2027 - 12 Goals",
             "2029 - 10 Goals"
-          ]
+          ],
+              "premios":[{
+            "name": "Melhor jogador Carabao Cup",
+            "temporada": ["24","27","29"]
+          }]
         },
         {
           "name": "Copa Del Rey",
           "imgliga": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Logo_Copa_del_Rey_2021_%28navy_badge%29.svg/1901px-Logo_Copa_del_Rey_2021_%28navy_badge%29.svg.png",
           "img": "https://tmssl.akamaized.net/images/erfolge/verybigquad/94.png?lm=1520606999",
-          "quantidade": 2,
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/FCBarcelona.svg/1200px-FCBarcelona.svg.png",
@@ -221,13 +258,16 @@
               "temporada": "2028"
             }
           ],
-          "artilharias": ["2028 - 11 Goals"]
+          "artilharias": ["2028 - 11 Goals"],
+              "premios":[{
+            "name": "Melhor jogador da Copa Del Rey",
+            "temporada": ["26", "28"]
+          }]
         },
         {
           "name": "La Liga",
           "imgliga": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/LaLiga_logo_%28stacked%29.svg/1200px-LaLiga_logo_%28stacked%29.svg.png",
           "img": "https://upload.wikimedia.org/wikipedia/commons/4/45/LaLiga.png",
-          "quantidade": 2,
           "temporadas": [
             {
               "team": "https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/FCBarcelona.svg/1200px-FCBarcelona.svg.png",
@@ -238,7 +278,11 @@
               "temporada": "2028"
             }
           ],
-          "artilharias": ["2026 - 30 Goals", "2028 - 26 Goals"]
+          "artilharias": ["2026 - 30 Goals", "2028 - 26 Goals"],
+              "premios":[{
+            "name": "Melhor jogador da La Liga",
+            "temporada": ["26","28"]
+          }]
         }
       ],
 
@@ -264,4 +308,3 @@
     }
   ]
 }
-

@@ -16,31 +16,27 @@ var PerfilComponent = /** @class */ (function () {
         this.fifaService = fifaService;
         this.route = route;
         this.isArtilhariasRoute = false;
-        this.infos = [];
-        this.titulos = [];
+        this.resultsArray = [];
         this.route.events
             .pipe(rxjs_1.filter(function (event) { return event instanceof router_1.NavigationEnd; }))
             .subscribe(function (event) {
-            _this.isArtilhariasRoute = event.url === '/artilharias';
+            if (event instanceof router_1.NavigationEnd) {
+                _this.isArtilhariasRoute = event.url.includes('/artilharias') || event.url.includes('/clubes');
+            }
         });
     }
-    PerfilComponent.prototype.getInfo = function () {
+    PerfilComponent.prototype.getResults = function () {
         var _this = this;
-        return this.fifaService.getInfo().subscribe(function (res) { return _this.infos = res; });
-    };
-    PerfilComponent.prototype.getTitulos = function () {
-        var _this = this;
-        return this.fifaService.getTitulos().subscribe(function (res) {
-            _this.titulos = res;
+        return this.fifaService.getResults().subscribe(function (res) {
+            _this.resultsArray = res.results;
         });
     };
     PerfilComponent.prototype.ngOnInit = function () {
-        this.getInfo();
-        this.getTitulos();
+        this.getResults();
     };
     __decorate([
         core_1.Output()
-    ], PerfilComponent.prototype, "titulos");
+    ], PerfilComponent.prototype, "resultsArray");
     PerfilComponent = __decorate([
         core_1.Component({
             selector: 'app-perfil',

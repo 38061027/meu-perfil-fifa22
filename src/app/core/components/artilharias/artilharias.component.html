@@ -8,7 +8,7 @@
 
 
             <ul class="temporada-content">
-              <li  *ngFor="let i of artilharias[0].titulos">
+              <li  *ngFor="let i of artilharias[0]?.titulos">
                 <p class="temp-liga"><img [src]="i.imgliga" ></p>
                  <p>{{i.artilharias}}</p>
               </li>

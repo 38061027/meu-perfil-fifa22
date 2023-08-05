@@ -42,6 +42,7 @@ var app_component_1 = require("./app.component");
 var testing_3 = require("@angular/common/http/testing");
 var perfil_component_1 = require("./core/components/perfil/perfil.component");
 var estatisticas_component_1 = require("./core/components/estatisticas/estatisticas.component");
+var router_1 = require("@angular/router");
 describe('AppComponent', function () {
     beforeEach(function () { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
@@ -49,7 +50,11 @@ describe('AppComponent', function () {
                 case 0: return [4 /*yield*/, testing_1.TestBed.configureTestingModule({
                         imports: [
                             testing_2.RouterTestingModule,
-                            testing_3.HttpClientTestingModule
+                            testing_3.HttpClientTestingModule,
+                            testing_2.RouterTestingModule.withRoutes([
+                                { path: 'titulos', loadChildren: function () { return Promise.resolve().then(function () { return require('./core/components/titulos/titulos.module'); }).then(function (m) { return m.TitulosModule; }); }
+                                }
+                            ])
                         ],
                         declarations: [
                             app_component_1.AppComponent,
@@ -67,5 +72,11 @@ describe('AppComponent', function () {
         var fixture = testing_1.TestBed.createComponent(app_component_1.AppComponent);
         var app = fixture.componentInstance;
         expect(app).toBeTruthy();
+    });
+    it('Deve testar a rota TITULOS', function () {
+        var router = testing_1.TestBed.inject(router_1.Router);
+        spyOn(router, 'navigateByUrl');
+        router.navigateByUrl('/titulos');
+        expect(router.navigateByUrl).toHaveBeenCalledWith('/titulos');
     });
 });

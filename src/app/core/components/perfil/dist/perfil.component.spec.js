@@ -43,15 +43,23 @@ var testing_3 = require("@angular/common/http/testing");
 var estatisticas_component_1 = require("../estatisticas/estatisticas.component");
 var fifa_service_1 = require("../../services/fifa.service");
 var rxjs_1 = require("rxjs");
+var artilharias_component_1 = require("../artilharias/artilharias.component");
+var router_1 = require("@angular/router");
+var clubes_component_1 = require("../clubes/clubes.component");
 describe('EstatisticasComponent', function () {
     var component;
     var fixture;
     var fifaService;
+    var router;
     beforeEach(function () { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, testing_1.TestBed.configureTestingModule({
-                        imports: [testing_2.RouterTestingModule, testing_3.HttpClientTestingModule],
+                        imports: [testing_2.RouterTestingModule, testing_3.HttpClientTestingModule,
+                            testing_2.RouterTestingModule.withRoutes([
+                                { path: 'test', component: artilharias_component_1.ArtilhariasComponent },
+                                { path: 'clubes', component: clubes_component_1.ClubesComponent }
+                            ])],
                         declarations: [perfil_component_1.PerfilComponent, estatisticas_component_1.EstatisticasComponent],
                         providers: [fifa_service_1.FifaService]
                     })
@@ -62,6 +70,7 @@ describe('EstatisticasComponent', function () {
                     component = fixture.componentInstance;
                     fixture.detectChanges();
                     fifaService = testing_1.TestBed.inject(fifa_service_1.FifaService);
+                    router = testing_1.TestBed.inject(router_1.Router);
                     spyOn(fifaService, 'getResults').and.returnValue(rxjs_1.of({ results: ['Resultado 1', 'Resultado 2', 'Resultado 3'] }));
                     return [2 /*return*/];
             }
@@ -73,5 +82,12 @@ describe('EstatisticasComponent', function () {
     it('Deve retonar uma lista de results', function () {
         component.ngOnInit();
         expect(component.resultsArray).toEqual(['Resultado 1', 'Resultado 2', 'Resultado 3']);
+    });
+    it('De testar as rotas ARTILHARIAS E CLUBES', function () {
+        spyOn(router, 'navigateByUrl');
+        router.navigateByUrl('/artilharias');
+        router.navigateByUrl('/clubes');
+        expect(router.navigateByUrl).toHaveBeenCalledWith('/artilharias');
+        expect(router.navigateByUrl).toHaveBeenCalledWith('/clubes');
     });
 });

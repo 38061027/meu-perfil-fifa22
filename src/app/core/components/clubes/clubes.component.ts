@@ -10,12 +10,18 @@ export class ClubesComponent implements OnInit {
 
   transferTeams: any[]= []
 
+  displayedColumns: string[] = ['temporada', 'origem', 'destino', 'valor'];
+
 constructor(private fifaService: FifaService){
 }
 
 
 getTransfer(){
-  this.fifaService.getResults().subscribe(res => this.transferTeams = res.results)
+  this.fifaService.getResults().subscribe((res) => {
+    console.log(res.results
+      )
+    this.transferTeams = res.results
+  })
 }
 
 ngOnInit(): void {

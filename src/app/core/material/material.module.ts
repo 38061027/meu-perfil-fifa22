@@ -4,12 +4,14 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTableModule} from '@angular/material/table';
 
 const MODULES = [
   MatCardModule,
   MatIconModule,
   MatBadgeModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatTableModule
 ]
 
 @NgModule({

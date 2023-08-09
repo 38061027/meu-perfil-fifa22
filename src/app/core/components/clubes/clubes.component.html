@@ -2,69 +2,121 @@
 <body>
 
 
-  <mat-card class="card-container" >
-    <div class="hearder"></div>
 
-    <mat-card-content class="card" >
+  <table mat-table [dataSource]="transferTeams[0]?.transferencia"  class="mat-elevation-z8">
 
-      <div class="transfer" *ngFor="let c of transferTeams[0]?.transferencia">
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
 
-  <div class="content-teams">
-      <p class="before"><img [src]="c.gremio" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p class="after"><img [src]="c.everton" class="img-transfer"></p>
-  </div>
-  <div class="content-teams">
-      <p ><img [src]="c.everton" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.mancity" class="img-transfer"></p>
-  </div>
-  <div class="content-teams">
-      <p><img [src]="c.mancity" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.manutd" class="img-transfer"></p>
+    <!-- Position Column -->
+    <ng-container matColumnDef="temporada">
+      <th mat-header-cell *matHeaderCellDef> Temporada </th>
+      <td mat-cell *matCellDef="let element"> {{element.temporada}} </td>
+    </ng-container>
 
-  </div>
-  <div class="content-teams">
-      <p><img [src]="c.manutd" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.barcelona" class="img-transfer"></p>
+    <!-- Name Column -->
+    <ng-container matColumnDef="origem">
+      <th mat-header-cell *matHeaderCellDef> Origem </th>
+      <td mat-cell *matCellDef="let element"> {{element.origem[0].name}} </td>
+    </ng-container>
 
-  </div>
-  <div class="content-teams">
-      <p><img [src]="c.barcelona" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.mancity" class="img-transfer"></p>
+    <!-- Weight Column -->
+    <ng-container matColumnDef="destino">
+      <th mat-header-cell *matHeaderCellDef> Destino </th>
+      <td mat-cell *matCellDef="let element"> {{element.destino[0].name}} </td>
+    </ng-container>
 
-  </div>
-  <div class="content-teams">
-      <p><img [src]="c.mancity" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.manutd" class="img-transfer"></p>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="valor">
+      <th mat-header-cell *matHeaderCellDef> Valor </th>
+      <td mat-cell *matCellDef="let element"> {{element.valor}} </td>
+    </ng-container>
 
-  </div>
-  <div class="content-teams">
-      <p><img [src]="c.manutd" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.realmadrid" class="img-transfer"></p>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
 
-  </div>
-  <div class="content-teams">
-      <p><img [src]="c.realmadrid" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.chelsea" class="img-transfer"></p>
-
-  </div>
-  <div class="content-teams">
-      <p><img [src]="c.chelsea" class="img-transfer"></p>
-      <mat-icon>arrow_forward</mat-icon>
-      <p><img [src]="c.intermilao" class="img-transfer"></p>
-
-  </div>
+<!--
+  <div *ngFor="let c of transferTeams[0]?.transferencia">
+<p *ngFor="let item of c.origem">
+  {{item.name}}
+</p>
+  </div> -->
 
 
-      </div>
 
-    </mat-card-content>
-  </mat-card>
+
 </body>
+
+
+<!--
+<body>
+
+
+    <mat-card class="card-container" >
+      <div class="hearder"></div>
+
+      <mat-card-content class="card" >
+
+        <div class="transfer" *ngFor="let c of transferTeams[0]?.transferencia">
+
+    <div class="content-teams">
+        <p class="before"><img [src]="c.gremio" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p class="after"><img [src]="c.everton" class="img-transfer"></p>
+    </div>
+    <div class="content-teams">
+        <p ><img [src]="c.everton" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.mancity" class="img-transfer"></p>
+    </div>
+    <div class="content-teams">
+        <p><img [src]="c.mancity" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.manutd" class="img-transfer"></p>
+
+    </div>
+    <div class="content-teams">
+        <p><img [src]="c.manutd" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.barcelona" class="img-transfer"></p>
+
+    </div>
+    <div class="content-teams">
+        <p><img [src]="c.barcelona" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.mancity" class="img-transfer"></p>
+
+    </div>
+    <div class="content-teams">
+        <p><img [src]="c.mancity" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.manutd" class="img-transfer"></p>
+
+    </div>
+    <div class="content-teams">
+        <p><img [src]="c.manutd" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.realmadrid" class="img-transfer"></p>
+
+    </div>
+    <div class="content-teams">
+        <p><img [src]="c.realmadrid" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.chelsea" class="img-transfer"></p>
+
+    </div>
+    <div class="content-teams">
+        <p><img [src]="c.chelsea" class="img-transfer"></p>
+        <mat-icon>arrow_forward</mat-icon>
+        <p><img [src]="c.intermilao" class="img-transfer"></p>
+
+    </div>
+
+
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </body>
+   -->

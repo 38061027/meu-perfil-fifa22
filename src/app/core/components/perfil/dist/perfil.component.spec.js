@@ -40,7 +40,7 @@ var testing_1 = require("@angular/core/testing");
 var perfil_component_1 = require("./perfil.component");
 var testing_2 = require("@angular/router/testing");
 var testing_3 = require("@angular/common/http/testing");
-var estatisticas_component_1 = require("../estatisticas/estatisticas.component");
+var toolbar_component_1 = require("../toolbar/toolbar.component");
 var fifa_service_1 = require("../../services/fifa.service");
 var rxjs_1 = require("rxjs");
 var artilharias_component_1 = require("../artilharias/artilharias.component");
@@ -55,15 +55,17 @@ describe('EstatisticasComponent', function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, testing_1.TestBed.configureTestingModule({
-                        imports: [testing_2.RouterTestingModule, testing_3.HttpClientTestingModule,
+                        imports: [
+                            testing_2.RouterTestingModule,
+                            testing_3.HttpClientTestingModule,
                             testing_2.RouterTestingModule.withRoutes([
                                 { path: 'test', component: artilharias_component_1.ArtilhariasComponent },
-                                { path: 'clubes', component: clubes_component_1.ClubesComponent }
-                            ])],
-                        declarations: [perfil_component_1.PerfilComponent, estatisticas_component_1.EstatisticasComponent],
+                                { path: 'clubes', component: clubes_component_1.ClubesComponent },
+                            ]),
+                        ],
+                        declarations: [perfil_component_1.PerfilComponent, toolbar_component_1.ToolbarComponent],
                         providers: [fifa_service_1.FifaService]
-                    })
-                        .compileComponents()];
+                    }).compileComponents()];
                 case 1:
                     _a.sent();
                     fixture = testing_1.TestBed.createComponent(perfil_component_1.PerfilComponent);
@@ -81,7 +83,11 @@ describe('EstatisticasComponent', function () {
     });
     it('Deve retonar uma lista de results', function () {
         component.ngOnInit();
-        expect(component.resultsArray).toEqual(['Resultado 1', 'Resultado 2', 'Resultado 3']);
+        expect(component.resultsArray).toEqual([
+            'Resultado 1',
+            'Resultado 2',
+            'Resultado 3',
+        ]);
     });
     it('De testar as rotas ARTILHARIAS E CLUBES', function () {
         spyOn(router, 'navigateByUrl');

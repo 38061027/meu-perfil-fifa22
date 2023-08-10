@@ -7,12 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 exports.CoreModule = void 0;
-var errors_interceptor_1 = require("./../errors.interceptor");
+var errors_interceptor_1 = require("../interceptors/errors.interceptor");
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
 var artilharias_component_1 = require("./components/artilharias/artilharias.component");
 var perfil_component_1 = require("./components/perfil/perfil.component");
-var estatisticas_component_1 = require("./components/estatisticas/estatisticas.component");
+var toolbar_component_1 = require("./components/toolbar/toolbar.component");
 var titulos_component_1 = require("./components/titulos/titulos.component");
 var router_1 = require("@angular/router");
 var clubes_component_1 = require("./components/clubes/clubes.component");
@@ -21,7 +21,7 @@ var http_1 = require("@angular/common/http");
 var COMPONENTS = [
     artilharias_component_1.ArtilhariasComponent,
     perfil_component_1.PerfilComponent,
-    estatisticas_component_1.EstatisticasComponent,
+    toolbar_component_1.ToolbarComponent,
     titulos_component_1.TitulosComponent,
     clubes_component_1.ClubesComponent
 ];

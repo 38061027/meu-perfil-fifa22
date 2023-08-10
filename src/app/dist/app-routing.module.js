@@ -12,10 +12,14 @@ var router_1 = require("@angular/router");
 var artilharias_component_1 = require("./core/components/artilharias/artilharias.component");
 var clubes_component_1 = require("./core/components/clubes/clubes.component");
 var routes = [
-    { path: 'titulos', loadChildren: function () { return Promise.resolve().then(function () { return require('./core/components/titulos/titulos.module'); }).then(function (m) { return m.TitulosModule; }); }
+    {
+        path: 'titulos',
+        loadChildren: function () {
+            return Promise.resolve().then(function () { return require('./core/components/titulos/titulos.module'); }).then(function (m) { return m.TitulosModule; });
+        }
     },
     { path: 'artilharias', component: artilharias_component_1.ArtilhariasComponent },
-    { path: 'clubes', component: clubes_component_1.ClubesComponent }
+    { path: 'clubes', component: clubes_component_1.ClubesComponent },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

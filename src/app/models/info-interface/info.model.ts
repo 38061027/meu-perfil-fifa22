@@ -10,15 +10,3 @@ export interface Informacao{
       foto: string
 
 }
-
-
-export interface Titulos{
-
-  img:string;
-  imgliga: string;
-  name: string;
-  quantidade: number;
-  temporadas: Titulos[];
-  artilharias:string[]
-
-}

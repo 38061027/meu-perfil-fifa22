@@ -22,6 +22,7 @@ body {
   gap: 10px;
   padding: 1rem;
 }
+
 .transfer .content-teams p {
   display: flex;
   align-items: center;
@@ -34,17 +35,16 @@ body {
   align-self: center;
   margin-right: 10px;
   font-weight: bold;
-
   color: red;
 }
+
 .transfer .content-teams::after {
   content: "Entrou";
   display: inline;
   align-self: center;
   margin-left: 10px;
   font-weight: bold;
-
-  color: rgb(68, 226, 68);
+  color: #44e244;
 }
 
 .transfer .content-teams mat-icon {

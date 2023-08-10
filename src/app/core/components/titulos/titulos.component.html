@@ -1,7 +1,4 @@
 <body>
-
-
-
   <div class="container">
     <mat-card class="card-container" *ngFor="let p of taca[0]?.titulos">
       <div class="hearder">
@@ -16,12 +13,11 @@
         <div class="section-season">
           <ul>
             <li *ngFor="let i of p.temporadas" class="temporadas">
-               {{ i.temporada }} - <img [src]="i.team" />
+              {{ i.temporada }} - <img [src]="i.team" [title]="i.name" />
             </li>
           </ul>
         </div>
       </mat-card-content>
-
 
       <mat-expansion-panel
         (opened)="panelOpenState = true"
@@ -34,7 +30,7 @@
         </mat-expansion-panel-header>
         <div class="premios-content" *ngFor="let premio of p.premios">
           <p>{{ premio.name }}</p>
-          <p>{{premio.temporada.length}}x</p>
+          <p>{{ premio.temporada.length }}x</p>
         </div>
       </mat-expansion-panel>
     </mat-card>

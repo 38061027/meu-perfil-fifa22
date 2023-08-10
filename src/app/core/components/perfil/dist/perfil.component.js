@@ -21,7 +21,8 @@ var PerfilComponent = /** @class */ (function () {
             .pipe(rxjs_1.filter(function (event) { return event instanceof router_1.NavigationEnd; }))
             .subscribe(function (event) {
             if (event instanceof router_1.NavigationEnd) {
-                _this.isArtilhariasRoute = event.url.includes('/artilharias') || event.url.includes('/clubes');
+                _this.isArtilhariasRoute =
+                    event.url.includes('/artilharias') || event.url.includes('/clubes');
             }
         });
     }

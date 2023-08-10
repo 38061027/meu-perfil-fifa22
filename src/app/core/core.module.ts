@@ -1,10 +1,10 @@
-import { ErrorsInterceptor } from './../errors.interceptor';
+import { ErrorsInterceptor } from '../interceptors/errors.interceptor';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArtilhariasComponent } from './components/artilharias/artilharias.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
-import { EstatisticasComponent } from './components/estatisticas/estatisticas.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { TitulosComponent } from './components/titulos/titulos.component';
 import { RouterModule } from '@angular/router';
 import { ClubesComponent } from './components/clubes/clubes.component';
@@ -16,7 +16,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 const COMPONENTS = [
   ArtilhariasComponent,
   PerfilComponent,
-  EstatisticasComponent,
+ToolbarComponent,
   TitulosComponent,
   ClubesComponent
 
@@ -34,7 +34,7 @@ const COMPONENTS = [
   ],
   exports:[COMPONENTS],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: ErrorsInterceptor, multi: true }, 
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorsInterceptor, multi: true },
   ],
 })
 export class CoreModule { }

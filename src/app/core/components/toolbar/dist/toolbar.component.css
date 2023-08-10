@@ -1,0 +1,41 @@
+.nav-container {
+  background-color: #459be2;
+  width: 100%;
+  height: 2rem;
+}
+
+.nav-container .nav-bar {
+  height: 100%;
+}
+
+.nav-container .nav-bar .nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-container .nav-bar .nav-list li a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: bold;
+}
+
+.nav-container .nav-bar .nav-list li {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.active {
+  background: #1d539b;
+  color: #eee;
+}
+
+@media screen and (max-width: 870px) {
+  .nav-container {
+    width: 100%;
+  }
+}

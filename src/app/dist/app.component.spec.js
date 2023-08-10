@@ -41,7 +41,7 @@ var testing_2 = require("@angular/router/testing");
 var app_component_1 = require("./app.component");
 var testing_3 = require("@angular/common/http/testing");
 var perfil_component_1 = require("./core/components/perfil/perfil.component");
-var estatisticas_component_1 = require("./core/components/estatisticas/estatisticas.component");
+var toolbar_component_1 = require("./core/components/toolbar/toolbar.component");
 var router_1 = require("@angular/router");
 describe('AppComponent', function () {
     beforeEach(function () { return __awaiter(void 0, void 0, void 0, function () {
@@ -52,15 +52,15 @@ describe('AppComponent', function () {
                             testing_2.RouterTestingModule,
                             testing_3.HttpClientTestingModule,
                             testing_2.RouterTestingModule.withRoutes([
-                                { path: 'titulos', loadChildren: function () { return Promise.resolve().then(function () { return require('./core/components/titulos/titulos.module'); }).then(function (m) { return m.TitulosModule; }); }
-                                }
-                            ])
+                                {
+                                    path: 'titulos',
+                                    loadChildren: function () {
+                                        return Promise.resolve().then(function () { return require('./core/components/titulos/titulos.module'); }).then(function (m) { return m.TitulosModule; });
+                                    }
+                                },
+                            ]),
                         ],
-                        declarations: [
-                            app_component_1.AppComponent,
-                            perfil_component_1.PerfilComponent,
-                            estatisticas_component_1.EstatisticasComponent
-                        ]
+                        declarations: [app_component_1.AppComponent, perfil_component_1.PerfilComponent, toolbar_component_1.ToolbarComponent]
                     }).compileComponents()];
                 case 1:
                     _a.sent();

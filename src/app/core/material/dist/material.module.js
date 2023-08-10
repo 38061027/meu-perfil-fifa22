@@ -19,7 +19,7 @@ var MODULES = [
     icon_1.MatIconModule,
     badge_1.MatBadgeModule,
     expansion_1.MatExpansionModule,
-    table_1.MatTableModule
+    table_1.MatTableModule,
 ];
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
@@ -27,10 +27,7 @@ var MaterialModule = /** @class */ (function () {
     MaterialModule = __decorate([
         core_1.NgModule({
             declarations: [],
-            imports: [
-                common_1.CommonModule,
-                MODULES
-            ],
+            imports: [common_1.CommonModule, MODULES],
             exports: [MODULES]
         })
     ], MaterialModule);

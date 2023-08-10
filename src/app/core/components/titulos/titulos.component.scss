@@ -1,24 +1,18 @@
-
-
-
-
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   align-items: center;
-
 }
 
-.card-container{
+.card-container {
   margin-top: 10px;
   width: 300px;
   border-top: 1px solid gray;
-
 }
 
-.hearder{
+.hearder {
   display: flex;
   background-color: #1d539b;
   color: aliceblue;
@@ -27,8 +21,8 @@
   padding: 5px;
 }
 
-.card-container .card{
-  border: 1px solid  rgb(170, 160, 160);
+.card-container .card {
+  border: 1px solid rgb(170, 160, 160);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -36,65 +30,50 @@
   align-items: center;
   justify-content: center;
 }
-.card-container .premios-content{
+.card-container .premios-content {
   display: flex;
   flex-direction: column;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-mat-panel-description{
+mat-panel-description {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
-.card-container .card .section-img{
-
-width: 40%;
-height: 150px;
-display: flex;
-align-items: center;
-justify-content: center;
-
+.card-container .card .section-img {
+  width: 40%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.card-container .card .section-img img{
-max-width: 70px;
+.card-container .card .section-img img {
+  max-width: 70px;
 }
-.card-container .card .section-season{
-border-left: 1px solid rgb(170, 160, 160);
-width: 60%;
-height: 180px;
-display: flex;
-
+.card-container .card .section-season {
+  border-left: 1px solid rgb(170, 160, 160);
+  width: 60%;
+  height: 180px;
+  display: flex;
 }
-.card-container .card .section-season ul{
-list-style: none;
+.card-container .card .section-season ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
- justify-content: center;
- margin-left: 5px;
- margin-top: 10px;
-
+  justify-content: center;
+  margin-left: 5px;
+  margin-top: 10px;
 }
-.card-container .card .section-season .temporadas img{
-
+.card-container .card .section-season .temporadas img {
   width: 1rem;
   height: 0.8rem;
 }
 
-@media screen and (max-width: 435px){
-
+@media screen and (max-width: 435px) {
   .card-container {
-   width: 100%;
+    width: 100%;
   }
-
 }
-
-
-
-

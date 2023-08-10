@@ -24,6 +24,7 @@ Status: developing ⚠️
 + HTTP requests - GET
 + Input and output communication
 + Lazy load
++ Interceptors
 + Methods
 + Tab Component
 + Interfaces

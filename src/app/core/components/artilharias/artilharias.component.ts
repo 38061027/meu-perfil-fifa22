@@ -10,11 +10,13 @@ import { FifaService } from '../../services/fifa.service';
 export class ArtilhariasComponent implements OnInit {
   artilharias: any[] = [];
 
+
   constructor(private fifaService: FifaService) {}
 
   getArtilharias() {
     return this.fifaService.getResults().subscribe((res) => {
       this.artilharias = res.results;
+
     });
   }
 

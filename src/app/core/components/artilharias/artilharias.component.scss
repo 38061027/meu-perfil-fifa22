@@ -2,12 +2,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
 }
 
 .card-container {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 1px solid rgb(175, 170, 170);
 }
 
@@ -33,9 +36,12 @@ body {
 .card-container .card .temporada-content .temp-liga {
   color: blue;
   font-weight: bolder;
+  display: flex;
+
+  justify-content: center;
 }
 
 .card-container .card .temporada-content .temp-liga img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }

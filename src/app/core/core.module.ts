@@ -11,6 +11,7 @@ import { ClubesComponent } from './components/clubes/clubes.component';
 
 import { MaterialModule } from './material/material.module';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { EstatisticasComponent } from './components/estatisticas/estatisticas.component';
 
 
 const COMPONENTS = [
@@ -18,13 +19,14 @@ const COMPONENTS = [
   PerfilComponent,
 ToolbarComponent,
   TitulosComponent,
-  ClubesComponent
+  ClubesComponent,
+  EstatisticasComponent
 
 ]
 
 
 @NgModule({
-  declarations: [COMPONENTS],
+  declarations: [COMPONENTS, EstatisticasComponent],
   imports: [
     CommonModule,
     RouterModule,

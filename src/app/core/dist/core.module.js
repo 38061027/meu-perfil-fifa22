@@ -18,19 +18,21 @@ var router_1 = require("@angular/router");
 var clubes_component_1 = require("./components/clubes/clubes.component");
 var material_module_1 = require("./material/material.module");
 var http_1 = require("@angular/common/http");
+var estatisticas_component_1 = require("./components/estatisticas/estatisticas.component");
 var COMPONENTS = [
     artilharias_component_1.ArtilhariasComponent,
     perfil_component_1.PerfilComponent,
     toolbar_component_1.ToolbarComponent,
     titulos_component_1.TitulosComponent,
-    clubes_component_1.ClubesComponent
+    clubes_component_1.ClubesComponent,
+    estatisticas_component_1.EstatisticasComponent
 ];
 var CoreModule = /** @class */ (function () {
     function CoreModule() {
     }
     CoreModule = __decorate([
         core_1.NgModule({
-            declarations: [COMPONENTS],
+            declarations: [COMPONENTS, estatisticas_component_1.EstatisticasComponent],
             imports: [
                 common_1.CommonModule,
                 router_1.RouterModule,

@@ -9,13 +9,16 @@
       <td mat-cell *matCellDef="let element">{{ element.temporada }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="origem">
+    <ng-container class="origem" matColumnDef="origem">
       <th mat-header-cell *matHeaderCellDef>Origem</th>
       <td mat-cell *matCellDef="let element">
         <div class="content-td">
           <img class="img-team" [src]="element.origem[0].img" />
           <img class="img-team" [src]="element.origem[0].country" />
           <a>{{ element.origem[0].name }}</a>
+          <span class="material-symbols-outlined">
+            arrow_forward
+            </span>
         </div>
       </td>
     </ng-container>
@@ -33,7 +36,7 @@
 
     <ng-container matColumnDef="valor">
       <th mat-header-cell *matHeaderCellDef>Valor</th>
-      <td mat-cell *matCellDef="let element">{{ element.valor }}</td>
+      <td mat-cell *matCellDef="let element">&#8364;{{ element.valor }}</td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

@@ -1,16 +1,14 @@
 <body>
   <mat-card class="card-container" *ngFor="let i of artilharias[0]?.titulos">
-    <div class="hearder">{{i.name}}</div>
+    <div class="hearder" >{{ i.name }}</div>
 
     <mat-card-content class="card">
       <ul class="temporada-content">
-        <li >
-          <p class="temp-liga"><img [src]="i.imgliga" /> </p>
-          <p class="artilharias-content">{{ i.artilharias }}</p>
-
+        <li>
+          <p class="temp-liga"><img [src]="i.imgliga" /></p>
+          <p class="artilharias-content" >{{ i.artilharias }}</p>
         </li>
       </ul>
-
     </mat-card-content>
   </mat-card>
 </body>

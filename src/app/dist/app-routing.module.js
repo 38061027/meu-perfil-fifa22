@@ -11,6 +11,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var artilharias_component_1 = require("./core/components/artilharias/artilharias.component");
 var clubes_component_1 = require("./core/components/clubes/clubes.component");
+var estatisticas_component_1 = require("./core/components/estatisticas/estatisticas.component");
 var routes = [
     {
         path: 'titulos',
@@ -20,6 +21,7 @@ var routes = [
     },
     { path: 'artilharias', component: artilharias_component_1.ArtilhariasComponent },
     { path: 'clubes', component: clubes_component_1.ClubesComponent },
+    { path: 'estatisticas', component: estatisticas_component_1.EstatisticasComponent },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

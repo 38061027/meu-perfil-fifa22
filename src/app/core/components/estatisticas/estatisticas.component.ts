@@ -8,7 +8,7 @@ import { FifaService } from '../../services/fifa.service';
 })
 export class EstatisticasComponent implements OnInit {
 
-  displayedColumns: string[] = ['item', 'cost'];
+  displayedColumns: string[] = ['nome', 'numero'];
 
   statsArr: any[]= []
 
@@ -24,5 +24,7 @@ export class EstatisticasComponent implements OnInit {
   ngOnInit(): void {
     this.getStats()
   }
+
+
 
 }

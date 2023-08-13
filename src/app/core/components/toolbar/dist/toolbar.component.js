@@ -11,6 +11,12 @@ var core_1 = require("@angular/core");
 var ToolbarComponent = /** @class */ (function () {
     function ToolbarComponent() {
         this.panelOpen = false;
+        this.routList = [
+            { rota: '/titulos', nome: 'Titulos' },
+            { rota: '/artilharias', nome: 'Artilharias' },
+            { rota: '/estatisticas', nome: 'Estatísticas' },
+            { rota: '/clubes', nome: 'Tranferências' },
+        ];
     }
     ToolbarComponent = __decorate([
         core_1.Component({

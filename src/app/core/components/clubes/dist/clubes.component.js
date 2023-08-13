@@ -15,8 +15,9 @@ var ClubesComponent = /** @class */ (function () {
         this.displayedColumns = ['temporada', 'origem', 'destino', 'valor'];
     }
     ClubesComponent.prototype.getTransfer = function () {
+        var _this = this;
         this.fifaService.getResults().subscribe(function (res) {
-            console.log(res.results);
+            _this.transferTeams = res.results;
         });
     };
     ClubesComponent.prototype.ngOnInit = function () {

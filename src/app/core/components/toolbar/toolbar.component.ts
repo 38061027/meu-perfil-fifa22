@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ToolbarComponent {
   panelOpen = false;
+
+
+  routList = [
+    {rota:'/titulos', nome: 'Titulos'},
+    {rota:'/artilharias', nome: 'Artilharias'},
+    {rota:'/estatisticas', nome: 'Estatísticas'},
+    {rota:'/clubes', nome: 'Tranferências'},
+    
+  ]
+
 }

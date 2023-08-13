@@ -15,8 +15,7 @@ export class ClubesComponent implements OnInit {
 
   getTransfer() {
     this.fifaService.getResults().subscribe((res) => {
-      console.log(res.results);
-
+      this.transferTeams = res.results
     });
   }
 

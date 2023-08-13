@@ -11,7 +11,7 @@ var core_1 = require("@angular/core");
 var EstatisticasComponent = /** @class */ (function () {
     function EstatisticasComponent(fifaServices) {
         this.fifaServices = fifaServices;
-        this.displayedColumns = ['item', 'cost'];
+        this.displayedColumns = ['nome', 'numero'];
         this.statsArr = [];
     }
     EstatisticasComponent.prototype.getStats = function () {

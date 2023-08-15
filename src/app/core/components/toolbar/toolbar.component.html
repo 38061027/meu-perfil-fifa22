@@ -1,8 +1,8 @@
 <nav class="nav-container">
   <div class="nav-bar">
     <ul class="nav-list">
-      <li *ngFor="let rota of routList" [routerLinkActive]="['active']">
-        <a href="#javascript:void(0)" routerLink="{{rota.rota}}">{{rota.nome}}</a>
+      <li *ngFor="let rota of routersList" [routerLinkActive]="['active']">
+        <a href="#javascript:void(0)" routerLink="{{rota.rotas}}">{{rota.nome}}</a>
       </li>
     </ul>
   </div>

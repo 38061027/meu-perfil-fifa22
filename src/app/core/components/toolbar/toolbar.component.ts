@@ -9,12 +9,12 @@ export class ToolbarComponent {
   panelOpen = false;
 
 
-  routList = [
-    {rota:'/titulos', nome: 'Titulos'},
-    {rota:'/artilharias', nome: 'Artilharias'},
-    {rota:'/estatisticas', nome: 'Estatísticas'},
-    {rota:'/clubes', nome: 'Tranferências'},
-    
+  routersList = [
+    {rotas:'/titulos', nome: 'Titulos'},
+    {rotas:'/artilharias', nome: 'Artilharias'},
+    {rotas:'/estatisticas', nome: 'Estatísticas'},
+    {rotas:'/clubes', nome: 'Tranferências'},
+
   ]
 
 }

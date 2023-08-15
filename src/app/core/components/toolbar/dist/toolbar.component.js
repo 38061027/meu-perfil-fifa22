@@ -11,11 +11,11 @@ var core_1 = require("@angular/core");
 var ToolbarComponent = /** @class */ (function () {
     function ToolbarComponent() {
         this.panelOpen = false;
-        this.routList = [
-            { rota: '/titulos', nome: 'Titulos' },
-            { rota: '/artilharias', nome: 'Artilharias' },
-            { rota: '/estatisticas', nome: 'Estatísticas' },
-            { rota: '/clubes', nome: 'Tranferências' },
+        this.routersList = [
+            { rotas: '/titulos', nome: 'Titulos' },
+            { rotas: '/artilharias', nome: 'Artilharias' },
+            { rotas: '/estatisticas', nome: 'Estatísticas' },
+            { rotas: '/clubes', nome: 'Tranferências' },
         ];
     }
     ToolbarComponent = __decorate([

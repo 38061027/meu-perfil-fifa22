@@ -6,6 +6,7 @@
 Status: developing ⚠️
 
  ### Project developeing by me, to show my trajectory in fifa 22 in campaign mode.
+ ## inspired by the websites: HLTV.ORG and TRANFERMARKT
 
 > #### Technologies and libraries used in the project
 >

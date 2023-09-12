@@ -23,6 +23,18 @@ var TitulosComponent = /** @class */ (function () {
             _this.taca = res.results;
         });
     };
+    TitulosComponent.prototype.ordenarTitulosMaiorParaMenor = function () {
+        var _a;
+        (_a = this.taca[0]) === null || _a === void 0 ? void 0 : _a.titulos.sort(function (a, b) {
+            return b.temporadas.length - a.temporadas.length;
+        });
+    };
+    TitulosComponent.prototype.ordenarTitulosMenorParaMaior = function () {
+        var _a;
+        (_a = this.taca[0]) === null || _a === void 0 ? void 0 : _a.titulos.sort(function (a, b) {
+            return a.temporadas.length - b.temporadas.length;
+        });
+    };
     TitulosComponent = __decorate([
         core_1.Component({
             selector: 'app-titulos',

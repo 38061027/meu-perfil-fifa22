@@ -6,8 +6,9 @@ body {
 
 .container {
   background-color: #e7e0dc;
+  border-radius: 5px;
   display: flex;
-  width: 60%;
+  width: 70%;
   height: 400px;
   flex-direction: column;
   position: relative;

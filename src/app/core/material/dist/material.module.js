@@ -14,12 +14,14 @@ var icon_1 = require("@angular/material/icon");
 var badge_1 = require("@angular/material/badge");
 var expansion_1 = require("@angular/material/expansion");
 var table_1 = require("@angular/material/table");
+var button_1 = require("@angular/material/button");
 var MODULES = [
     card_1.MatCardModule,
     icon_1.MatIconModule,
     badge_1.MatBadgeModule,
     expansion_1.MatExpansionModule,
     table_1.MatTableModule,
+    button_1.MatButtonModule
 ];
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {

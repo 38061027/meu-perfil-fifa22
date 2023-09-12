@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 
 const MODULES = [
   MatCardModule,
@@ -12,6 +13,7 @@ const MODULES = [
   MatBadgeModule,
   MatExpansionModule,
   MatTableModule,
+  MatButtonModule
 ];
 
 @NgModule({

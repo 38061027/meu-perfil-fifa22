@@ -2,7 +2,7 @@
   <main class="container">
     <div class="content-img-info" *ngFor="let i of resultsArray[0]?.info">
       <div class="img">
-        <img src="" alt="" class="foto" />
+        <img src="assets/imgs/foto-perfil.png" alt="" class="foto" />
 
         <div class="valor">Valor: &#8364;{{ i.valor }}</div>
       </div>
@@ -26,15 +26,19 @@
     </div>
 
     <div class="titulos-content">
-      <div class="titulos" *ngFor="let t of resultsArray[0]?.titulos">
-        <img [src]="t.img" class="titulos-img" [title]="t.name" />
-        <p class="num-titulos" [matBadge]="t.temporadas.length"></p>
-      </div>
+
+        <div class="titulos" *ngFor="let t of resultsArray[0]?.titulos">
+
+          <img [src]="t.img" class="titulos-img" [title]="t.name"  />
+          <p class="num-titulos" [matBadge]="t.temporadas.length"></p>
+
+        </div>
+
     </div>
 
     <div class="estatistica">
       <app-toolbar></app-toolbar>
-      
+
     </div>
   </main>
 </body>

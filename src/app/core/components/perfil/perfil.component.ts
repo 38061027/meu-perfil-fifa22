@@ -27,6 +27,7 @@ export class PerfilComponent implements OnInit {
   getResults() {
     return this.fifaService.getResults().subscribe((res) => {
       this.resultsArray = res.results;
+      this.ordenarTitulo()
     });
   }
 
@@ -34,6 +35,11 @@ export class PerfilComponent implements OnInit {
     this.getResults();
   }
 
+  ordenarTitulo(){
+    this.resultsArray[0].titulos.sort((a:any,b:any)=>{
+      return a.peso - b.peso
+    })
+  }
 
 
 }

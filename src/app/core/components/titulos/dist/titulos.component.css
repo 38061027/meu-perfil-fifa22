@@ -43,6 +43,13 @@ mat-panel-description {
   align-items: center;
 }
 
+.btn-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
 .card-container .card .section-img {
   width: 40%;
   height: 150px;

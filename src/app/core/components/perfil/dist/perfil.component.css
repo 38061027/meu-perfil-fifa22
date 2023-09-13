@@ -71,6 +71,9 @@ body {
 
 .info-content .info .nasc-info {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 .info-content .info .nasc-info .nasc {
@@ -80,6 +83,8 @@ body {
 .info-content .info .time-info {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 .info-content .info .time {

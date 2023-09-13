@@ -30,10 +30,16 @@ var PerfilComponent = /** @class */ (function () {
         var _this = this;
         return this.fifaService.getResults().subscribe(function (res) {
             _this.resultsArray = res.results;
+            _this.ordenarTitulo();
         });
     };
     PerfilComponent.prototype.ngOnInit = function () {
         this.getResults();
+    };
+    PerfilComponent.prototype.ordenarTitulo = function () {
+        this.resultsArray[0].titulos.sort(function (a, b) {
+            return a.peso - b.peso;
+        });
     };
     __decorate([
         core_1.Output()

@@ -2,6 +2,8 @@ import { Component, OnInit, Output } from '@angular/core';
 import { NavigationEnd, Router, Event } from '@angular/router';
 import { filter } from 'rxjs';
 import { FifaService } from '../../services/fifa.service';
+import { Informacao } from 'src/app/models/info';
+import { Titulos } from 'src/app/models/titulos';
 
 @Component({
   selector: 'app-perfil',
@@ -11,7 +13,7 @@ import { FifaService } from '../../services/fifa.service';
 export class PerfilComponent implements OnInit {
   isArtilhariasRoute: boolean = false;
 
-  @Output() resultsArray: any[] = [];
+  @Output() resultsArray: any | Informacao[] = [];
 
   constructor(private fifaService: FifaService, private route: Router) {
     this.route.events

@@ -1,5 +1,6 @@
 export interface Informacao{
 
+  info:{
       nome:string,
      idade: number,
       posicao:string,
@@ -8,5 +9,5 @@ export interface Informacao{
       altura:number,
       valor: number,
       foto: string
-
+}[]
 }

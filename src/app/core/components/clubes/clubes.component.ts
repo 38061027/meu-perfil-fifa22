@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FifaService } from '../../services/fifa.service';
+import { Clubes } from 'src/app/models/clubes';
 
 @Component({
   selector: 'app-clubes',
@@ -7,7 +8,7 @@ import { FifaService } from '../../services/fifa.service';
   styleUrls: ['./clubes.component.scss'],
 })
 export class ClubesComponent implements OnInit {
-  transferTeams: any[] = [];
+  transferTeams!: Clubes[];
 
   displayedColumns: string[] = ['temporada', 'origem', 'destino', 'valor'];
 

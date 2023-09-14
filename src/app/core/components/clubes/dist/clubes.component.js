@@ -11,7 +11,6 @@ var core_1 = require("@angular/core");
 var ClubesComponent = /** @class */ (function () {
     function ClubesComponent(fifaService) {
         this.fifaService = fifaService;
-        this.transferTeams = [];
         this.displayedColumns = ['temporada', 'origem', 'destino', 'valor'];
     }
     ClubesComponent.prototype.getTransfer = function () {

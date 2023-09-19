@@ -17,6 +17,7 @@ var PerfilComponent = /** @class */ (function () {
         this.route = route;
         this.isArtilhariasRoute = false;
         this.resultsArray = [];
+        this.titulos = [];
         this.route.events
             .pipe(rxjs_1.filter(function (event) { return event instanceof router_1.NavigationEnd; }))
             .subscribe(function (event) {
@@ -30,6 +31,7 @@ var PerfilComponent = /** @class */ (function () {
         var _this = this;
         return this.fifaService.getResults().subscribe(function (res) {
             _this.resultsArray = res.results;
+            _this.titulos = res.results[0].titulos;
             _this.ordenarTitulo();
         });
     };
@@ -37,9 +39,11 @@ var PerfilComponent = /** @class */ (function () {
         this.getResults();
     };
     PerfilComponent.prototype.ordenarTitulo = function () {
-        this.resultsArray[0].titulos.sort(function (a, b) {
-            return a.peso - b.peso;
-        });
+        if (this.titulos[0].titulos) {
+            this.titulos[0].titulos.sort(function (a, b) {
+                return a.peso - b.peso;
+            });
+        }
     };
     __decorate([
         core_1.Output()

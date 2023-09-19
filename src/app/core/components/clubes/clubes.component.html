@@ -8,43 +8,50 @@
       class="mat-elevation-z8"
 
     >
-      <ng-container matColumnDef="temporada">
-        <th mat-header-cell *matHeaderCellDef>Temporada</th>
-        <td mat-cell *matCellDef="let element">{{ element.temporada }}</td>
-      </ng-container>
 
-      <ng-container class="origem" matColumnDef="origem">
-        <th mat-header-cell *matHeaderCellDef>Origem</th>
-        <td mat-cell *matCellDef="let element">
-          <div class="content-td">
-            <img class="img-team" [src]="element.origem[0].img" />
 
-            <a>{{ element.origem[0].name }}</a>
-            <span class="material-symbols-outlined">
-              arrow_forward
-              </span>
-          </div>
-        </td>
-      </ng-container>
+          <ng-container matColumnDef="temporada">
+            <th mat-header-cell *matHeaderCellDef>Temporada</th>
+            <td mat-cell *matCellDef="let element">{{ element.temporada }}</td>
+          </ng-container>
+          <ng-container class="origem" matColumnDef="origem">
+            <th mat-header-cell *matHeaderCellDef>Origem</th>
+            <td mat-cell *matCellDef="let element">
+              <div class="content-td" >
+                <img class="img-team" [src]="element.origem[0].img" />
+                <a>{{ element.origem[0].name }}</a>
+<div class="setas">
+  
+                  <span id="entrada" class="material-symbols-outlined">
+                    arrow_back
+                    </span>
+                  <span id="saida" class="material-symbols-outlined">
+                    arrow_forward
+                    </span>
+  
+  
+</div>
+              </div>
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="destino">
+            <th mat-header-cell *matHeaderCellDef>Destino</th>
+            <td mat-cell *matCellDef="let element">
+              <div class="content-td">
+                <img class="img-team" [src]="element.destino[0].img" />
+                <a>{{ element.destino[0].name }}</a>
+              </div>
+            </td>
+          </ng-container>
+          <ng-container matColumnDef="valor">
+            <th mat-header-cell *matHeaderCellDef>Valor</th>
+            <td mat-cell *matCellDef="let element">&#8364;{{ element.valor }}</td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 
-      <ng-container matColumnDef="destino">
-        <th mat-header-cell *matHeaderCellDef>Destino</th>
-        <td mat-cell *matCellDef="let element">
-          <div class="content-td">
-            <img class="img-team" [src]="element.destino[0].img" />
+      </table>
 
-            <a>{{ element.destino[0].name }}</a>
-          </div>
-        </td>
-      </ng-container>
 
-      <ng-container matColumnDef="valor">
-        <th mat-header-cell *matHeaderCellDef>Valor</th>
-        <td mat-cell *matCellDef="let element">&#8364;{{ element.valor }}</td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    </table>
   </body>
 

@@ -14,6 +14,7 @@ export class PerfilComponent implements OnInit {
   isArtilhariasRoute: boolean = false;
 
   @Output() resultsArray: any | Informacao[] = [];
+  titulos: Titulos[] = []
 
   constructor(private fifaService: FifaService, private route: Router) {
     this.route.events
@@ -29,6 +30,7 @@ export class PerfilComponent implements OnInit {
   getResults() {
     return this.fifaService.getResults().subscribe((res) => {
       this.resultsArray = res.results;
+      this.titulos = res.results[0].titulos;
       this.ordenarTitulo()
     });
   }
@@ -38,9 +40,12 @@ export class PerfilComponent implements OnInit {
   }
 
   ordenarTitulo(){
-    this.resultsArray[0].titulos.sort((a:any,b:any)=>{
-      return a.peso - b.peso
-    })
+    if(this.titulos[0].titulos){
+
+      this.titulos[0].titulos.sort((a:any,b:any)=>{
+        return a.peso - b.peso
+      })
+    }
   }
 
 

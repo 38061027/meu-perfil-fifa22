@@ -17,11 +17,17 @@ table td .content-td {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 
+table #saida {
+  color: #2fe23e;
 
-table .material-symbols-outlined {
+}
+
+table #entrada {
   color: #ff0000;
 
 }
